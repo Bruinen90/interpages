@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding: 0;
+    padding-top: 80px; //for mobile navbar
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.global__content {
+    margin: auto;
+    max-width: 1920px;
+    overflow: hidden;
+}
+
+@media (min-width: $desktop--min--width) {
+    body {
+        padding-top: 0;
+    }
+}
+
+@media (min-width: $big--desktop--min--width) {
+
+}
