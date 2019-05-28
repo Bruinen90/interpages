@@ -9,51 +9,73 @@
     </head>
     <body>
         <nav class="navbar">
-            <img src="./img/logo_white.png" alt="Interpages" class="navbar__logo">
-            <button class="hamburger hamburger--spring" type="button" onclick="toggleMenu()">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
-            <div class="menu">
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a href="/" class="menu__link">
-                            Home
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="/" class="menu__link">
-                            Services
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="/" class="menu__link">
-                            About
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="/" class="menu__link">
-                            Portfolio
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="/" class="menu__link">
-                            Clients
-                        </a>
-                    </li>
-                    <li class="menu__item menu__item--yellow">
-                        <a href="/" class="menu__link">
-                            <button class="button button--yellow button--small button--textOnMobile">
-                                Contact
-                            </button>
-                        </a>
-                    </li>
-                </ul>
+            <div class="navbar__cont">
+                <img src="./img/logo_white.png" alt="Interpages" class="navbar__logo">
+                <button class="hamburger hamburger--spring" type="button" onclick="toggleMenu()">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                <div class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="/" class="menu__link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/" class="menu__link">
+                                Services
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/" class="menu__link">
+                                About
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/" class="menu__link">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/" class="menu__link">
+                                Clients
+                            </a>
+                        </li>
+                        <li class="menu__item menu__item--yellow">
+                            <a href="/" class="menu__link">
+                                <button class="button button--yellow button--small button--textOnMobile">
+                                    Contact
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <section class="welcome">
-
+            <div class="welcome__bckCont">
+                <!-- <img src="./img/hero_shape.png" alt="" class="welcome__bckLeftImg"> -->
+                <img src="./img/hero_bck.svg" alt="" class="welcome__bckImg">
+            </div>
+            <div class="welcome__cont">
+                <div class="welcome__textCont">
+                    <h2 class="welcome__header">
+                        We are the best
+                        turn your business
+                        to next level
+                    </h2>
+                    <a href="/get_started.html" class="welcome__buttonCont">
+                        <button class="button button--green">
+                            Get started
+                        </button>
+                    </a>
+                </div>
+                <div class="welcome__laptopCont">
+                    <img src="./img/laptop.svg" alt="" class="welcome__laptopImg">
+                </div>
+            </div>
         </section>
         <script type="text/javascript" src="js/menu.js"></script>
     </body>

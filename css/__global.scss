@@ -5,8 +5,9 @@
 
 body {
     padding: 0;
-    padding-top: 80px; //for mobile navbar
+    padding-top: $navbar-height; //for mobile navbar
     margin: 0;
+    overflow-x: hidden;
 }
 
 a {
@@ -15,15 +16,15 @@ a {
 }
 
 .global__content {
-    margin: auto;
-    max-width: 1920px;
     overflow: hidden;
 }
 
+.content {
+
+}
+
 @media (min-width: $desktop--min--width) {
-    body {
-        padding-top: 0;
-    }
+
 }
 
 @media (min-width: $big--desktop--min--width) {

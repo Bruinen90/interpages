@@ -84,3 +84,9 @@
     bottom: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
   }
 }
+
+@media (min-width: $desktop--min--width) {
+    .hamburger {
+        display: none;
+    }
+}
