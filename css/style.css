@@ -1612,6 +1612,11 @@ p {
 @media (min-width: 960px) {
   .testi {
     padding: 120px 0;
+    padding-bottom: 0;
+  }
+
+  .testi__cont {
+    border-bottom: 1px solid #e1e1e1;
   }
 
   .testi__header {
@@ -1672,6 +1677,24 @@ p {
     max-height: 180px;
     overflow: auto;
   }
+}
+.logos {
+  padding: 60px 0;
+}
+
+.logos__cont {
+  margin: auto;
+  max-width: 1300px;
+  padding: 0 15px;
+}
+@media (min-width: 960px) {
+  .logos__cont {
+    padding: 0 60px;
+  }
+}
+
+.logos__img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

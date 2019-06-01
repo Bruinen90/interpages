@@ -1,0 +1,11 @@
+.logos {
+    padding: 60px 0;
+}
+
+.logos__cont {
+    @include content;
+}
+
+.logos__img {
+    width: 100%;
+}

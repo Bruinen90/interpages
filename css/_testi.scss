@@ -131,6 +131,11 @@
 @media (min-width: $desktop--min--width) {
     .testi {
         padding: 120px 0;
+        padding-bottom: 0;
+    }
+
+    .testi__cont {
+        border-bottom: 1px solid #e1e1e1; 
     }
 
     .testi__header {
