@@ -35,6 +35,14 @@
     display: none;
 }
 
+.welcome__laptopCont {
+    width: 100%;
+}
+
+.welcome__laptopImg {
+    width: 100%;
+}
+
 @media (min-width: $desktop--min--width) {
     .welcome {
         background-image: none;
@@ -91,7 +99,7 @@
 
 @media (min-width: $big--desktop--min--width) {
     .welcome__cont {
-        min-height: 650px;
+        min-height: 900px;
     }
 
     .welcome__header {
@@ -103,7 +111,7 @@
         position: absolute;
         right: 0;
         top: 50%;
-        width: 50%;
-        transform: translateX(70%) translateY(-50%);
+        width: 75%;
+        transform: translateX(55%) translateY(-50%);
     }
 }

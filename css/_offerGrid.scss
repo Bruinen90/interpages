@@ -1,0 +1,115 @@
+.offerGrid {
+    position: relative;
+    padding: 120px 0 10% 0;
+    overflow: hidden;
+    &::after {
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: -75%;
+        right: -10%;
+        bottom: 0;
+        background-image: linear-gradient(to bottom, #fdfeff, #f3fafe);
+        z-index: -5;
+        border-radius: 300px;
+        transform: rotate(-20deg) translateY(-20%);
+    }
+}
+
+.offerGrid__cont {
+    @include content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.offerGrid__header {
+    font-size: 36px;
+    line-height: 1.5em;
+    color: $color-black;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 75px;
+}
+
+.offerGrid__boxesCont {
+    display: grid;
+    grid-gap: 30px;
+}
+
+.offerGrid__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0 0 58px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.offerGrid__icon {
+    margin-bottom: 45px;
+}
+
+.offerGrid__title {
+    font-size: 20px;
+    line-height: 1.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.offerGrid__boxDesctiption {
+    color: $color-gray;
+    font-size: 13px;
+    line-height: 2em;
+    padding: 20px 0;
+
+}
+
+.offerGrid__box--dark {
+    background-color: #4e5ac4;
+    color: #fff;
+    .offerGrid__boxDesctiption {
+        color: #fff;
+    }
+}
+
+@media (min-width: $desktop--min--width) {
+    .offerGrid {
+        overflow: visible;
+        &::after {
+            left: -15%;
+            top: -75%;
+            right: -10%;
+            transform: rotate(-20deg) translateY(-10%);
+        }
+    }
+
+    .offerGrid__header {
+        font-size: 45px;
+        width: 50%;
+    }
+
+    .offerGrid__boxesCont {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .offerGrid__box {
+        transition: transform .25s ease-in;
+        &:hover {
+            transform: scale(1.1)
+        }
+    }
+}
+
+@media (min-width: $big--desktop--min--width) {
+    .offerGrid {
+        &::after {
+            left: 0;
+            transform: rotate(-20deg) translateY(-15%);
+        }
+    }
+}

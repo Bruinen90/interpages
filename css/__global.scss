@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    &:focus {
+        outline: none;
+    }
 }
 
 body {
@@ -8,11 +11,16 @@ body {
     padding-top: $navbar-height; //for mobile navbar
     margin: 0;
     overflow-x: hidden;
+    color: $color-black;
 }
 
 a {
     color: inherit;
     text-decoration: none;
+}
+
+p {
+    margin: 0;
 }
 
 .global__content {

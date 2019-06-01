@@ -1,6 +1,8 @@
 $color-orange: #e7a42e;
 $color-green: #1cbbb4;
 $color-violet: #4e5ac4;
+$color-black: #21375e;
+$color-gray: #666e83;
 
 $tablet--min--width: 568px;
 $desktop--min--width: 960px;
@@ -15,5 +17,8 @@ $shadow-light: rgba(0,0,0,.1);
 @mixin content {
     margin: auto;
     max-width: 1300px;
-    padding: 0 60px;
+    padding: 0 15px;
+    @media (min-width: $desktop--min--width) {
+        padding: 0 60px;
+    }
 }
