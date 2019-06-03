@@ -28,20 +28,48 @@
 
 .projects__bckImg {
     width: 100%;
+    transform: scaleY(5);
+    transform-origin: bottom;
 }
 
 .projects__cont {
     @include content;
+}
 
+.projects__header {
+    font-size: 28px;
+    line-height: 1.5em;
+}
+
+.projects__projectsSlider {
+    margin: 30px 0;
+    position: relative;
+    height: 450px;
+    overflow: hidden;
 }
 
 .projects__projectsBox {
     display: grid;
     grid-gap: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+.projects__projectsBox--active {
+    .projects__project, .projects__project--center {
+        transform: none;
+        opacity: 1;
+        transition: opacity .5s .5s linear, transform .5s .5s ease-in;
+    }
 }
 
 .projects__project {
     padding: 30px;
+    display: none;
+    opacity: 0;
+    transition: opacity .25s linear, transform .5s ease-in;
 }
 
 .projects__project--center {
@@ -67,6 +95,7 @@
     grid-column-end: span 3;
     display: flex;
     justify-content: center;
+    margin: 30px 0;
 }
 
 .projects__sliderDot {
@@ -84,6 +113,10 @@
     pointer-events: none;
 }
 
+.projects__buttonCont {
+    text-align: center;
+}
+
 @media (min-width: $desktop--min--width) {
     .projects__cont {
         display: grid;
@@ -91,20 +124,28 @@
         grid-gap: 60px;
     }
 
+    .projects__bckImg {
+        transform: scaleY(1.3);
+    }
+
     .projects__header {
         color: $color-black;
         font-size: 45px;
-        line-height: 68px;
         grid-column-end: span 2;
         margin: 0;
     }
 
-    .projects__buttonCont {
-        margin-left: auto;
-    }
-
     .projects__projectsSlider {
         grid-column-end: span 3;
+        margin: 0;
+        height: 550px;
+    }
+
+    .projects__buttonCont {
+        margin: 0;
+        margin-left: auto;
+        grid-row: 1;
+        grid-column: 3;
     }
 
     .projects__projectsBox {
@@ -112,14 +153,21 @@
     }
 
     .projects__project {
+        display: block;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        min-height: 500px;
+        transform: translateY(100%);
+    }
+
+    .projects__project--center {
+        display: flex;
+        transform: translateY(-100%);
     }
 }
 
 @media (min-width: $big--desktop--min--width) {
-    .projects__projectsBox {
+    .projects__bckImg {
+        transform: scaleY(1.1);
     }
 }

@@ -11,6 +11,18 @@
 .button--yellow {
     background-color: $color-orange;
 }
+
+.button--violet {
+    background-color: $color-violet;
+    text-transform: uppercase;
+}
+
+.button--green {
+    background-color: $color-green;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
 .button--textOnMobile {
     width: auto;
     height: auto;
@@ -22,11 +34,6 @@
     margin: 0;
 }
 
-.button--green {
-    background-color: $color-green;
-    text-transform: uppercase;
-    font-size: 18px;
-}
 
 @media (min-width: $desktop--min--width) {
     .button--textOnMobile {

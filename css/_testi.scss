@@ -15,6 +15,7 @@
 }
 
 .testi__sliderCont {
+    padding-bottom: 30px;
     display: flex;
     align-items: center;
     transition: transform .25s ease-in;
@@ -123,7 +124,7 @@
 .testi__text {
     position: relative;
     z-index: 1;
-    max-height: 150px;
+    max-height: 220px;
     overflow: auto;
 }
 
@@ -135,7 +136,7 @@
     }
 
     .testi__cont {
-        border-bottom: 1px solid #e1e1e1; 
+        border-bottom: 1px solid #e1e1e1;
     }
 
     .testi__header {
@@ -158,6 +159,7 @@
 
     .testi__clientCont {
         grid-gap: 45px;
+        align-items: center;
     }
 
     .testi__imgCont {
@@ -178,6 +180,7 @@
     }
 
     .testi__textCont {
+        margin: auto 0;
         display: grid;
         grid-template-columns: 1fr 4fr;
         grid-gap: 60px;
@@ -196,7 +199,7 @@
     .testi__text {
         font-size: 20px;
         padding-right: 50px;
-        max-height: 180px;
+        max-height: 190px;
         overflow: auto;
     }
 }

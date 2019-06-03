@@ -1,0 +1,79 @@
+.footer {
+    padding: 60px 0;
+}
+
+.footer__cont {
+    @include content;
+}
+
+.footer__logoCont {
+    margin: 30px 0;
+}
+
+.footer__header {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.footer__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: $color-gray;
+}
+
+.footer__list--withColumns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.footer__item {
+    margin-bottom: 8px;
+}
+
+.footer__socialsCont {
+    display: flex;
+    margin-top: 1em;
+}
+
+.footer__socialIcon {
+    width: 25px;
+    height: 25px;
+    margin-right: 16px;
+}
+
+@media (min-width: $desktop--min--width) {
+    .footer__cont {
+        display: grid;
+        grid-template-columns: 3fr 1fr 3fr 1fr;
+        grid-gap: 60px;
+    }
+
+    .footer__header {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+
+    .footer__list--withColumns {
+        grid-auto-flow: column;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .footer__socialIcon {
+        opacity: .33;
+        filter: saturate(0);
+        &:hover {
+            opacity: 1;
+            filter: none;
+        }
+    }
+
+    .footer__socialIcon svg {
+        fill: currentColor !important;
+    }
+
+    .socialPath {
+        fill: red !important;
+        stroke: 2px;
+    }
+}

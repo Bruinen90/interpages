@@ -153,18 +153,55 @@
                     We’ve done lot’s of work, Let’s
                     Check some from here
                 </h2>
-                <div class="projects__buttonCont">
-                    <button class="button button--green">
-                        All projects
-                    </button>
-                </div>
                 <div class="projects__projectsSlider">
+                    <div class="projects__projectsBox projects__projectsBox--active">
+                        <div class="projects__project" style="background-image: url('./img/project_1.jpg')"></div>
+                        <div class="projects__project projects__project--center" style="background-image: url('./img/project_2.jpg')">
+                            <div class="projects__projectText">
+                                <h5 class="projects__projectHeader">
+                                    Project no 1
+                                </h5>
+                                <p class="projects__projectDesctipiton">
+                                    Website development
+                                </p>
+                            </div>
+                        </div>
+                        <div class="projects__project" style="background-image: url('./img/project_3.jpg')"></div>
+                    </div>
                     <div class="projects__projectsBox">
                         <div class="projects__project" style="background-image: url('./img/project_1.jpg')"></div>
                         <div class="projects__project projects__project--center" style="background-image: url('./img/project_2.jpg')">
                             <div class="projects__projectText">
                                 <h5 class="projects__projectHeader">
-                                    Project name here
+                                    Project no 2
+                                </h5>
+                                <p class="projects__projectDesctipiton">
+                                    Website development
+                                </p>
+                            </div>
+                        </div>
+                        <div class="projects__project" style="background-image: url('./img/project_3.jpg')"></div>
+                    </div>
+                    <div class="projects__projectsBox">
+                        <div class="projects__project" style="background-image: url('./img/project_1.jpg')"></div>
+                        <div class="projects__project projects__project--center" style="background-image: url('./img/project_2.jpg')">
+                            <div class="projects__projectText">
+                                <h5 class="projects__projectHeader">
+                                    Project no 3
+                                </h5>
+                                <p class="projects__projectDesctipiton">
+                                    Website development
+                                </p>
+                            </div>
+                        </div>
+                        <div class="projects__project" style="background-image: url('./img/project_3.jpg')"></div>
+                    </div>
+                    <div class="projects__projectsBox">
+                        <div class="projects__project" style="background-image: url('./img/project_1.jpg')"></div>
+                        <div class="projects__project projects__project--center" style="background-image: url('./img/project_2.jpg')">
+                            <div class="projects__projectText">
+                                <h5 class="projects__projectHeader">
+                                    Project no 4
                                 </h5>
                                 <p class="projects__projectDesctipiton">
                                     Website development
@@ -175,9 +212,12 @@
                     </div>
                 </div>
                 <div class="projects__sliderDots">
-                    <div class="projects__sliderDot projects__sliderDot--active"></div>
-                    <div class="projects__sliderDot"></div>
-                    <div class="projects__sliderDot"></div>
+                    <!-- Slider dots from project.js -->
+                </div>
+                <div class="projects__buttonCont">
+                    <button class="button button--green">
+                        All projects
+                    </button>
                 </div>
             </div>
         </section>
@@ -188,46 +228,129 @@
                     What our clients are saying
                 </h2>
                 <div class="testi__sliderCont">
-                    <!-- <div class="testi__slide">
-                        <div class="testi__clientCont">
-                            <div class="testi__imgCont">
-                                <div class="testi__img" style="background-image: url('./img/client_1.jpg')"></div>
-                                <img src="/img/testi_egg.svg" alt="" class="testi__egg" />
-                                <img src="/img/testi_border.svg" alt="" class="testi__egg testi__egg--frame" />
-                            </div>
-                            <div class="testi__clientHeaders">
-                                <h5 class="testi__clientName">
-                                    Client name here
-                                </h5>
-                                <div class="testi__clientPosition">
-                                    Position title
-                                </div>
-                                <div class="testi__naviCont">
-                                    <div class="testi__arrowCont">
-                                        <img src="./img/icons/arrow_left.svg" alt="" class="testi__arrow" />
-                                    </div>
-                                    <div class="testi__arrowCont">
-                                        <img src="./img/icons/arrow_right.svg" alt="" class="testi__arrow">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testi__textCont">
-                            <img src="./img/icons/quotes.png" alt="" class="testi__quotes" />
-                            <p class="testi__text">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry as been the indus
-                            </p>
-                        </div>
-                    </div> -->
+                    <!-- here comes code from slider.js -->
                 </div>
             </div>
         </section>
 
-        <div class="logos">
+        <section class="logos">
             <div class="logos__cont">
-                <img src="./img/logos.png" alt="" class="logos__img">
+                <img src="./img/logo_1.png" alt="" class="logos__img">
+                <img src="./img/logo_2.png" alt="" class="logos__img">
+                <img src="./img/logo_3.png" alt="" class="logos__img">
+                <img src="./img/logo_4.png" alt="" class="logos__img">
+                <img src="./img/logo_5.png" alt="" class="logos__img">
             </div>
-        </div>
+        </section>
+
+        <section class="contact">
+            <div class="contact__cont">
+                <div class="contact__info">
+                <h2 class="contact__header">
+                    Don't hesitate to contact with us
+                </h2>
+                    <span class="contact__bold">Phone: </span>
+                        <a href="tel: 1234 02234421" class="contact__phone">1234 02234421</a>
+                    <br />
+                    <span class="contact__bold">Email: </span>
+                        <a href="mailto: info@interpages.com" class="contact__email">info@interpages.com</a>
+                    <a href="/blog/" class="contact__blog">
+                        Visit out blog
+                    </a>
+                </div>
+                <div class="contact__formCont">
+                    <form action="POST" class="contact__form">
+                        <input type="text" class="contact__input" placeholder="Enter your name" />
+                        <input type="email" class="contact__input" placeholder="Enter your email" />
+                        <textarea class="contact__textArea" placeholder="Enter your message"></textarea>
+                        <input type="button" value="Send message" class="button contact__button button--violet" />
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__cont">
+                <div class="footer__logoCont">
+                    <img src="./img/logo.png" alt="" class="footer__logoImg" />
+                    <div class="footer__copy">
+                        All rights are reserved ©<span id="footer__date"></span>
+                    </div>
+                </div>
+                <div class="footer__help">
+                    <h5 class="footer__header">
+                        Help Links
+                    </h5>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Cutomer support</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Privacy policy</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Terms</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__services">
+                    <h5 class="footer__header">
+                        Services
+                    </h5>
+                    <ul class="footer__list footer__list--withColumns">
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Node.js</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">React.js</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">IOS</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Node.js</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">React.js</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">IOS</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Node.js</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">React.js</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">IOS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__socials">
+                    <h5 class="footer__header">
+                        Accounts
+                    </h5>
+                    <div class="footer__socialsCont">
+                        <div class="footer__socialIconCont">
+                            <object type="image/svg+xml" data="./img/icons/social/facebook.svg" class="footer__socialIcon">
+                                Facebook
+                            </object>
+                        </div>
+                        <span class="footer__socialIconCont">
+                            <img src="./img/icons/social/twitter.svg" alt="" class="footer__socialIcon">
+                        </span>
+                        <span class="footer__socialIconCont">
+                            <img src="./img/icons/social/instagram.svg" alt="" class="footer__socialIcon">
+                        </span>
+                        <span class="footer__socialIconCont">
+                            <img src="./img/icons/social/youtube.svg" alt="" class="footer__socialIcon">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         <svg height="0" width="0">
                     <defs>
@@ -239,6 +362,11 @@
 
         <script type="text/javascript" src="js/menu.js"></script>
         <script type="text/javascript" src="js/testi.js"></script>
+        <script type="text/javascript" src="js/projects.js"></script>
 
+        <script type="text/javascript">
+            const currDate = new Date();
+            document.querySelector('#footer__date').innerHTML = currDate.getYear() + 1900;
+        </script>
     </body>
 </html>
