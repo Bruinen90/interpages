@@ -63,5 +63,29 @@
     .menu__item:last-child {
         margin-left: auto;
         margin-right: 0;
+        .menu__link:after {
+            display: none;
+        }
+    }
+
+    .menu__link {
+        position: relative;
+        &:after {
+            content: " ";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: $color-green;
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform .25s cubic-bezier(0, 0, 0.71, 2.19);
+        }
+        &:hover {
+            &:after {
+                transform: none;
+            }
+        }
     }
 }

@@ -27,6 +27,11 @@ p {
   overflow: hidden;
 }
 
+@media (min-width: 960px) {
+  body {
+    padding: 0;
+  }
+}
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
@@ -907,6 +912,7 @@ p {
 
 @media (min-width: 960px) {
   .navbar {
+    position: relative;
     background-color: transparent;
     box-shadow: none;
     display: flex;
@@ -933,8 +939,8 @@ p {
   }
 }
 .welcome {
-  background-image: linear-gradient(-222deg, #801ae2 0%, #00bf95 100%);
   position: relative;
+  overflow: hidden;
 }
 
 .welcome__cont {
@@ -956,7 +962,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   height: 95%;
   z-index: 2;
 }
@@ -969,23 +975,45 @@ p {
   line-height: 1.5em;
   margin-bottom: 45px;
   position: relative;
+  width: 55%;
 }
 
 .welcome__bckCont {
-  display: none;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -37px;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+}
+
+.welcome__bckImg {
+  height: 100%;
+  transform: scaleX(0.5);
+  transform-origin: left center;
 }
 
 .welcome__laptopCont {
-  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 90%;
+  transform: translateX(50%) translateY(-50%);
 }
 
 .welcome__laptopImg {
   width: 100%;
 }
 
+.welcome__buttonCont {
+  align-self: center;
+}
+
 @media (min-width: 960px) {
   .welcome {
     background-image: none;
+    overflow: visible;
   }
 
   .welcome__cont {
@@ -994,16 +1022,17 @@ p {
   }
 
   .welcome__bckCont {
-    display: block;
-    position: absolute;
     bottom: 12px;
     left: -37px;
     right: 0;
-    z-index: -1;
+    top: auto;
+    height: auto;
   }
 
   .welcome__bckImg {
+    transform: none;
     width: 100%;
+    height: auto;
   }
 
   .welcome__bckLeftImg {
@@ -1018,9 +1047,11 @@ p {
     height: auto;
     display: block;
     width: 45%;
+    align-items: center;
   }
 
   .welcome__header {
+    width: auto;
     font-size: 40px;
   }
 
@@ -1034,6 +1065,10 @@ p {
 
   .welcome__laptopImg {
     width: 100%;
+  }
+
+  .welcome__buttonCont {
+    align-self: auto;
   }
 }
 @media (min-width: 1600px) {
@@ -1120,50 +1155,116 @@ p {
     margin-left: auto;
     margin-right: 0;
   }
+  .menu__item:last-child .menu__link:after {
+    display: none;
+  }
+
+  .menu__link {
+    position: relative;
+  }
+  .menu__link:after {
+    content: " ";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #1cbbb4;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.25s cubic-bezier(0, 0, 0.71, 2.19);
+  }
+  .menu__link:hover:after {
+    transform: none;
+  }
 }
 .button {
   width: 200px;
   height: 65px;
-  border: 0;
-  border-radius: 33px;
   color: #fff;
+  border: 2px solid transparent;
   font-size: 16px;
+  border-radius: 33px;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+}
+.button:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -50%;
+  top: -50%;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  z-index: -1;
+  transition: all 0.25s ease-in;
 }
 
-.button--yellow {
+.button--yellow:after {
   background-color: #e7a42e;
 }
 
 .button--violet {
-  background-color: #4e5ac4;
   text-transform: uppercase;
+  background-color: #4e5ac4;
 }
 
 .button--green {
-  background-color: #1cbbb4;
   text-transform: uppercase;
+}
+.button--green:after {
+  background-color: #1cbbb4;
   font-size: 18px;
 }
 
 .button--textOnMobile {
   width: auto;
   height: auto;
-  background: transparent;
   color: inherit;
   font-size: inherit;
   text-shadow: 1px 2px rgba(0, 0, 0, 0.25);
   padding: 0;
   margin: 0;
 }
+.button--textOnMobile:after {
+  background: transparent;
+}
 
 @media (min-width: 960px) {
+  .button:hover {
+    background-color: transparent;
+    font-weight: bold;
+  }
+  .button:hover:after {
+    transform: translateY(100%);
+  }
+
+  .button--yellow:hover {
+    color: #e7a42e;
+    border-color: #e7a42e;
+  }
+
+  .button--green:hover {
+    color: #1cbbb4;
+    border-color: #1cbbb4;
+  }
+
+  .button--violet:hover {
+    color: #4e5ac4;
+    border-color: #4e5ac4;
+  }
+
   .button--textOnMobile {
     width: 200px;
     height: 65px;
-    background-color: #e7a42e;
     color: #fff;
     text-shadow: none;
+  }
+  .button--textOnMobile:after {
+    background: #e7a42e;
   }
 
   .button--small {
@@ -1181,13 +1282,13 @@ p {
   content: " ";
   position: absolute;
   left: 0;
-  top: -75%;
-  right: -10%;
+  top: 0;
+  right: 0;
   bottom: 0;
-  background-image: linear-gradient(to bottom, #fdfeff, #f3fafe);
+  background-image: linear-gradient(to bottom, #f3fafe, #fdfeff);
   z-index: -5;
-  border-radius: 300px;
-  transform: rotate(-20deg) translateY(-20%);
+  border-radius: 50%;
+  transform: translateX(-50%) scaleY(0.5) scaleX(2) translateY(-45%);
 }
 
 .offerGrid__cont {
@@ -1257,14 +1358,22 @@ p {
   color: #fff;
 }
 
+@media (min-width: 568px) {
+  .offerGrid__boxesCont {
+    grid-template: 1fr 1fr/1fr 1fr;
+    grid-gap: 15px;
+  }
+}
 @media (min-width: 960px) {
   .offerGrid {
     overflow: visible;
   }
   .offerGrid::after {
+    border-radius: 300px;
     left: -15%;
     top: -75%;
     right: -10%;
+    bottom: 0;
     transform: rotate(-20deg) translateY(-10%);
   }
 
@@ -1275,6 +1384,7 @@ p {
 
   .offerGrid__boxesCont {
     grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
   }
 
   .offerGrid__box {
@@ -1640,7 +1750,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+  border-radius: 50px;
   background-color: #fff;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   width: 30px;
@@ -1649,7 +1759,7 @@ p {
   cursor: pointer;
 }
 .testi__arrowCont:active {
-  transform: scale(0.8);
+  transform: scale(0.9);
 }
 
 .testi__textCont {
@@ -1715,6 +1825,13 @@ p {
 
   .testi__clientName {
     font-size: 20px;
+  }
+
+  .testi__arrowCont:hover {
+    background-color: #1cbbb4;
+  }
+  .testi__arrowCont:hover .testi__arrow {
+    filter: brightness(100);
   }
 
   .testi__arrow {

@@ -1,47 +1,99 @@
 .button {
     width: 200px;
     height: 65px;
-    border: 0;
-    border-radius: 33px;
     color: #fff;
+    border: 2px solid transparent;
     font-size: 16px;
+    border-radius: 33px;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    &:after {
+        content: " ";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -50%;
+        top: -50%;
+        border-radius: 50%;
+        border: 2px solid transparent;
+        z-index: -1;
+        transition: all .25s ease-in;
+    }
 }
 
-.button--yellow {
+.button--yellow:after {
     background-color: $color-orange;
 }
 
 .button--violet {
-    background-color: $color-violet;
     text-transform: uppercase;
+    background-color: $color-violet;
 }
 
 .button--green {
-    background-color: $color-green;
     text-transform: uppercase;
-    font-size: 18px;
+    &:after {
+        background-color: $color-green;
+        font-size: 18px;
+    }
 }
 
 .button--textOnMobile {
     width: auto;
     height: auto;
-    background: transparent;
     color: inherit;
     font-size: inherit;
     text-shadow: 1px 2px $shadow-medium;
     padding: 0;
     margin: 0;
+    &:after {
+        background: transparent;
+    }
 }
 
 
 @media (min-width: $desktop--min--width) {
+    .button {
+        &:hover {
+            background-color: transparent;
+            font-weight: bold;
+            &:after {
+                transform: translateY(100%);
+            }
+        }
+    }
+
+    .button--yellow {
+        &:hover {
+            color: $color-orange;
+            border-color: $color-orange;
+        }
+    }
+
+    .button--green {
+        &:hover {
+            color: $color-green;
+            border-color: $color-green;
+        }
+    }
+
+    .button--violet {
+        &:hover {
+            color: $color-violet;
+            border-color: $color-violet;
+        }
+    }
+
     .button--textOnMobile {
         width: 200px;
         height: 65px;
-        background-color: $color-orange;
         color: #fff;
         text-shadow: none;
+        &:after {
+            background: $color-orange;
+        }
     }
 
     .button--small {

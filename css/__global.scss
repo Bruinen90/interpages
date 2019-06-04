@@ -32,6 +32,9 @@ p {
 }
 
 @media (min-width: $desktop--min--width) {
+    body {
+        padding: 0;
+    }
 
 }
 

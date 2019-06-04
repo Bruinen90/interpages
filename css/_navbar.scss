@@ -25,6 +25,7 @@
 
 @media (min-width: $desktop--min--width) {
     .navbar {
+        position: relative;
         background-color: transparent;
         box-shadow: none;
         display: flex;

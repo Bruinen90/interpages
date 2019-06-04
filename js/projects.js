@@ -36,7 +36,7 @@ const changeBox = (nextSlideNum) => {
     styleElement(allDots, currentSlide, 'projects__sliderDot');
 }
 
-let startSlideShow = setInterval(()=>changeBox(currentSlide+1), 3000);
+let startSlideShow = setInterval(()=>changeBox(currentSlide+1), 5000);
 
 
 const activateDots = () => {
@@ -47,7 +47,7 @@ const activateDots = () => {
         dot.addEventListener('click', ()=>{
             changeBox(index);
             clearInterval(startSlideShow);
-            startSlideShow = setInterval(()=>changeBox(currentSlide+1), 3000);
+            startSlideShow = setInterval(()=>changeBox(currentSlide+1), 5000);
         })
     })
 }
