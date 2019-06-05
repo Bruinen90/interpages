@@ -32,11 +32,13 @@
         align-items: center;
         justify-content: space-between;
         height: 100px;
+
     }
 
     .navbar__cont {
         @include content;
-        margin-top: 30px;
+        padding: 30px 15px 60px 15px !important;
+        box-sizing: content-box;
     }
 
     .navbar__logo {

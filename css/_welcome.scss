@@ -45,7 +45,7 @@
 
 .welcome__bckImg {
     height: 100%;
-    transform: scaleX(.5);
+    transform: scaleX(.7);
     transform-origin: left center;
 }
 
@@ -69,6 +69,7 @@
     .welcome {
         background-image: none;
         overflow: visible;
+        margin-top:  -$navbar-height;
     }
 
     .welcome__cont {

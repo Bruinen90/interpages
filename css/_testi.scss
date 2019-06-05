@@ -128,6 +128,29 @@
     overflow: auto;
 }
 
+@media (min-width: $tablet--min--width) {
+    .testi__header {
+        margin: auto;
+        width: 50%;
+        text-align: center;
+        font-size: 45px;
+        line-height: 68px;
+    }
+    
+    .testi__imgCont {
+        width: 200px;
+        height: 200px;
+    }
+
+    #testiShape {
+        transform: scale(.8);
+    }
+
+    .testi__quotes {
+        width: 25%;
+    }
+}
+
 
 @media (min-width: $desktop--min--width) {
     .testi {
@@ -137,17 +160,6 @@
 
     .testi__cont {
         border-bottom: 1px solid #e1e1e1;
-    }
-
-    .testi__header {
-        margin: auto;
-        width: 50%;
-        text-align: center;
-        font-size: 45px;
-        line-height: 68px;
-    }
-
-    .testi__sliderCont {
     }
 
     .testi__slide {

@@ -69,14 +69,6 @@
 
 }
 
-.offerGrid__box--dark {
-    background-color: #4e5ac4;
-    color: #fff;
-    .offerGrid__boxDesctiption {
-        color: #fff;
-    }
-}
-
 @media (min-width: $tablet--min--width) {
     .offerGrid__boxesCont {
         grid-template: 1fr 1fr /1fr 1fr;
@@ -110,8 +102,31 @@
     .offerGrid__box {
         transition: transform .25s ease-in;
         &:hover {
-            transform: scale(1.1)
+            color: #fff;
+            .offerGrid__boxDesctiption {
+                color: #fff;
+            }
+            .offerGrid__icon {
+                filter: invert(1) brightness(100);
+            }
         }
+    }
+
+    .offerGrid__box--green:hover {
+        background-color: #25bb07
+    }
+
+    .offerGrid__box--orange:hover {
+        background-color: #fa8904;
+    }
+
+
+    .offerGrid__box--violet:hover {
+        background-color: #4e5ac4;
+    }
+
+    .offerGrid__box--black:hover {
+        background-color: #000;
     }
 }
 

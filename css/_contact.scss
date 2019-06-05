@@ -66,6 +66,13 @@
     align-self: flex-end;
 }
 
+@media (min-width: $tablet--min--width) {
+    .contact__cont {
+        width: 80%;
+        margin: auto;
+    }
+}
+
 @media (min-width: $desktop--min--width) {
     .contact {
         overflow: hidden;
@@ -79,6 +86,7 @@
     }
 
     .contact__cont {
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 90px 60px;

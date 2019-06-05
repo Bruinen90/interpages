@@ -59,6 +59,12 @@
         grid-template-rows: repeat(3, 1fr);
     }
 
+    .footer__link {
+        &:hover {
+            color: $color-green;
+        }
+    }
+
     .footer__socialIcon {
         opacity: .33;
         filter: saturate(0);
@@ -66,14 +72,5 @@
             opacity: 1;
             filter: none;
         }
-    }
-
-    .footer__socialIcon svg {
-        fill: currentColor !important;
-    }
-
-    .socialPath {
-        fill: red !important;
-        stroke: 2px;
     }
 }

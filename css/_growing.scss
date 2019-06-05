@@ -31,12 +31,14 @@
     margin-bottom: 8px;
 }
 
-@media (min-width: $desktop--min--width) {
+@media (min-width: $tablet--min--width) {
     .growing__cont {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 60px;
     }
+}
 
+@media (min-width: $desktop--min--width) {
     .growing__textCont {
         padding: 30px;
         padding-left: 0;
