@@ -2,7 +2,7 @@
     position: fixed;
     top: $navbar-height;
     left: 0;
-    background-color: $color-green;
+    background-color: #fff;
     width: 100%;
     padding: 30px;
     font-size: 1.5rem;
@@ -26,8 +26,8 @@
     margin-bottom: 15px;
 }
 
-.menu__item--yellow {
-    color: $color-orange;
+.menu__item--color {
+    color: $color-green;
 }
 
 @media (min-width: $desktop--min--width) {

@@ -52,7 +52,7 @@
     margin: 10px 0;
     box-shadow: 0 0 58px 1px rgba(0, 0, 0, 0.02);
     border-radius: 3px;
-    border: 0;
+    border: 1px solid $color-gray;
     padding: 5px 15px;
     width: 100%;
 }
@@ -64,6 +64,10 @@
 .contact__button {
     margin-top: 15px;
     align-self: flex-end;
+    -webkit-appearance: none;
+    font-size: .7em;
+    width: 150px;
+    height: 45px;
 }
 
 @media (min-width: $tablet--min--width) {
@@ -92,8 +96,8 @@
         padding: 90px 60px;
     }
 
-    .contact__formCont {
-
+    .contact__input, .contact__textArea {
+        border: 0;
     }
 
     .contact__header {
@@ -104,5 +108,8 @@
     .contact__button {
         margin: 30px 0;
         margin-bottom: 0;
+        width: 200px;
+        height: 65px;
+        font-size: 1em;
     }
 }

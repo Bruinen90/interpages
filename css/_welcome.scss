@@ -6,30 +6,26 @@
 
 .welcome__cont {
     @include content;
-    display: flex;
+    // display: flex;
+    // align-items: center;
+    // height: 90vh;
+    // position: relative;
+    display: grid;
     align-items: center;
-    height: 90vh;
-    position: relative;
-}
-
-.welcome__textCont {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    height: 95%;
-    z-index: 2;
+    grid-template-rows: 3fr 3fr 1fr;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .welcome__header {
     margin: 0;
     color: #fff;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: bold;
     line-height: 1.5em;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
     position: relative;
-    width: 55%;
+    width: 70%;
     // text-align: center;
 }
 
@@ -50,31 +46,30 @@
 }
 
 .welcome__laptopCont {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    width: 90%;
-    transform: translateX(50%) translateY(-50%);
+    text-align: center;
 }
 
 .welcome__laptopImg {
-    width: 100%;
+    width: 80%;
 }
 
 .welcome__buttonCont {
-    align-self: center;
+    text-align: center;
 }
 
-@media (min-width: $desktop--min--width) {
+@media (min-width: $tablet--min--width) {
     .welcome {
         background-image: none;
-        overflow: visible;
-        margin-top:  -$navbar-height;
+        margin-top:  -130px;
+        padding-top: 90px;
     }
 
     .welcome__cont {
-        height: auto;
-        min-height: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 600px;
     }
 
     .welcome__bckCont {
@@ -87,7 +82,7 @@
 
     .welcome__bckImg {
         transform: none;
-        width: 100%;
+        width: 120%;
         height: auto;
     }
 
@@ -99,24 +94,15 @@
         top: 0;
     }
 
-    .welcome__textCont {
-        height: auto;
-        display: block;
-        width: 45%;
-        align-items: center;
-    }
-
     .welcome__header {
-        width: auto;
-         font-size: 40px;
+        width: 50%;
+        font-size: 40px;
     }
 
     .welcome__laptopCont {
         position: absolute;
-        right: 0;
-        top: 50%;
+        right: -12%;
         width: 50%;
-        transform: translateX(30%) translateY(-50%);
     }
 
     .welcome__laptopImg {
@@ -124,13 +110,20 @@
     }
 
     .welcome__buttonCont {
-        align-self: auto;
+        text-align: left;
     }
+}
+
+@media (min-width: $desktop--min--width) {
 }
 
 @media (min-width: $big--desktop--min--width) {
     .welcome__cont {
-        min-height: 900px;
+        min-height: 90vh;
+    }
+
+    .welcome__bckImg {
+        width: 100%;
     }
 
     .welcome__header {
@@ -138,11 +131,8 @@
          margin-bottom: 80px;
     }
 
-    .welcome__laptopCont {
-        position: absolute;
-        right: 0;
-        top: 50%;
-        width: 75%;
-        transform: translateX(55%) translateY(-50%);
+    .welcome__laptopImg {
+        width: 50vw;
+        max-width: 1000px;
     }
 }
