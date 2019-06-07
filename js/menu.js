@@ -5,5 +5,4 @@ const toggleMenu = () => {
     menuCont.classList.toggle('menu--active');
     menuToggler.classList.toggle('is-active');
     cover.classList.toggle('cover--hidden');
-    console.log('click')
 }
