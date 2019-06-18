@@ -29,7 +29,9 @@
 
 .button--violet {
     text-transform: uppercase;
-    background-color: $color-violet;
+    &:after {
+        background-color: $color-violet;
+    }
 }
 
 .button--green {
@@ -55,6 +57,8 @@
 
 @media (min-width: $desktop--min--width) {
     .button {
+        transition: color 0s 0.15s ease-in, font-weight 0s 0.15s ease-in;
+        z-index: 1;
         &:hover {
             background-color: transparent;
             font-weight: bold;
@@ -72,16 +76,16 @@
     }
 
     .button--green {
+        border-color: $color-green;
         &:hover {
             color: $color-green;
-            border-color: $color-green;
         }
     }
 
     .button--violet {
+        border-color: $color-violet;
         &:hover {
             color: $color-violet;
-            border-color: $color-violet;
         }
     }
 

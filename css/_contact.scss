@@ -55,6 +55,10 @@
     border: 1px solid $color-gray;
     padding: 5px 15px;
     width: 100%;
+    transition: all .25s linear;
+    &:focus {
+        border-color: $color-violet;
+    }
 }
 
 .contact__textArea {
@@ -97,7 +101,11 @@
     }
 
     .contact__input, .contact__textArea {
-        border: 0;
+        border-color: transparent;
+        padding: 15px 30px;
+        &:focus {
+            border-color: $color-violet;
+        }
     }
 
     .contact__header {

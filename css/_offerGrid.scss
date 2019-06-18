@@ -105,32 +105,58 @@
 
     .offerGrid__box {
         transition: transform .25s ease-in;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+        transition: all .15s .15s linear;
         &:hover {
             color: #fff;
             .offerGrid__boxDesctiption {
                 color: #fff;
+                transition: all .15s .15s linear;
             }
             .offerGrid__icon {
                 filter: invert(1) brightness(100);
+                transition: all 0s .25s linear;
             }
+            &:after {
+                transform: none;
+            }
+        }
+        &:after {
+            content: " ";
+            position: absolute;
+            @include fullSize;
+            z-index: -1;
+            // border-radius: 10px;
+            transform: translateY(100%);
+            transition: all .25s ease-in;
         }
     }
 
-    .offerGrid__box--green:hover {
-        background-color: #25bb07
+    .offerGrid__box--green {
+        &:after {
+            background-color: #25bb07
+        }
     }
 
     .offerGrid__box--orange:hover {
-        background-color: #fa8904;
+        &:after {
+            background-color: #fa8904;
+        }
     }
 
 
     .offerGrid__box--violet:hover {
-        background-color: #4e5ac4;
+        &:after {
+            background-color: #4e5ac4;
+        }
     }
 
     .offerGrid__box--black:hover {
-        background-color: #000;
+        &:after {
+            background-color: #000;
+        }
     }
 }
 

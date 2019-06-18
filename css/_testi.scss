@@ -126,6 +126,16 @@
     z-index: 1;
     max-height: 220px;
     overflow: auto;
+    
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $color-green;
+        border: 1px solid $color-green;
+    }
 }
 
 @media (min-width: $tablet--min--width) {

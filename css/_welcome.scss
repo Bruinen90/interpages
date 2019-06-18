@@ -1,15 +1,10 @@
 .welcome {
-    // background-image: linear-gradient(-222deg, #801ae2 0%, #00bf95 100%);
     position: relative;
     overflow: hidden;
 }
 
 .welcome__cont {
     @include content;
-    // display: flex;
-    // align-items: center;
-    // height: 90vh;
-    // position: relative;
     display: grid;
     align-items: center;
     grid-template-rows: 3fr 3fr 1fr;
@@ -28,7 +23,6 @@
     margin-bottom: 30px;
     position: relative;
     width: 70%;
-    // text-align: center;
 }
 
 .welcome__bckCont {
@@ -121,7 +115,7 @@
 
 @media (min-width: $big--desktop--min--width) {
     .welcome__cont {
-        min-height: 90vh;
+        min-height: 750px;
     }
 
     .welcome__bckImg {
@@ -133,8 +127,12 @@
          margin-bottom: 80px;
     }
 
+    .welcome__laptopCont {
+        right: -25%;
+    }
+
     .welcome__laptopImg {
-        width: 50vw;
-        max-width: 1000px;
+        width: 42vw;
+        max-width: 800px;
     }
 }

@@ -16,6 +16,16 @@
 
 .growing__iphoneImg {
     width: 100%;
+    animation: float 5s alternate infinite linear;
+}
+
+@keyframes float {
+    from {
+        transform: translate(-5px, -10px)
+    }
+    to {
+        transform: translate(10px, 5px)
+    }
 }
 
 .growing__list {

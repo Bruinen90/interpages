@@ -337,7 +337,7 @@ p {
 }
 @media (min-width: 1600px) {
   .welcome__cont {
-    min-height: 90vh;
+    min-height: 750px;
   }
 
   .welcome__bckImg {
@@ -349,9 +349,13 @@ p {
     margin-bottom: 80px;
   }
 
+  .welcome__laptopCont {
+    right: -25%;
+  }
+
   .welcome__laptopImg {
-    width: 50vw;
-    max-width: 1000px;
+    width: 42vw;
+    max-width: 800px;
   }
 }
 .menu {
@@ -474,6 +478,8 @@ p {
 
 .button--violet {
   text-transform: uppercase;
+}
+.button--violet:after {
   background-color: #4e5ac4;
 }
 
@@ -498,6 +504,10 @@ p {
 }
 
 @media (min-width: 960px) {
+  .button {
+    transition: color 0s 0.15s ease-in, font-weight 0s 0.15s ease-in;
+    z-index: 1;
+  }
   .button:hover {
     background-color: transparent;
     font-weight: bold;
@@ -511,14 +521,18 @@ p {
     border-color: #e7a42e;
   }
 
-  .button--green:hover {
-    color: #1cbbb4;
+  .button--green {
     border-color: #1cbbb4;
   }
+  .button--green:hover {
+    color: #1cbbb4;
+  }
 
+  .button--violet {
+    border-color: #4e5ac4;
+  }
   .button--violet:hover {
     color: #4e5ac4;
-    border-color: #4e5ac4;
   }
 
   .button--textOnMobile {
@@ -649,30 +663,50 @@ p {
 
   .offerGrid__box {
     transition: transform 0.25s ease-in;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    transition: all 0.15s 0.15s linear;
   }
   .offerGrid__box:hover {
     color: #fff;
   }
   .offerGrid__box:hover .offerGrid__boxDesctiption {
     color: #fff;
+    transition: all 0.15s 0.15s linear;
   }
   .offerGrid__box:hover .offerGrid__icon {
     filter: invert(1) brightness(100);
+    transition: all 0s 0.25s linear;
+  }
+  .offerGrid__box:hover:after {
+    transform: none;
+  }
+  .offerGrid__box:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: translateY(100%);
+    transition: all 0.25s ease-in;
   }
 
-  .offerGrid__box--green:hover {
+  .offerGrid__box--green:after {
     background-color: #25bb07;
   }
 
-  .offerGrid__box--orange:hover {
+  .offerGrid__box--orange:hover:after {
     background-color: #fa8904;
   }
 
-  .offerGrid__box--violet:hover {
+  .offerGrid__box--violet:hover:after {
     background-color: #4e5ac4;
   }
 
-  .offerGrid__box--black:hover {
+  .offerGrid__box--black:hover:after {
     background-color: #000;
   }
 }
@@ -703,8 +737,17 @@ p {
 
 .growing__iphoneImg {
   width: 100%;
+  animation: float 5s alternate infinite linear;
 }
 
+@keyframes float {
+  from {
+    transform: translate(-5px, -10px);
+  }
+  to {
+    transform: translate(10px, 5px);
+  }
+}
 .growing__list {
   list-style: none;
   padding: 0;
@@ -1099,6 +1142,13 @@ p {
   max-height: 220px;
   overflow: auto;
 }
+.testi__text::-webkit-scrollbar {
+  width: 6px;
+}
+.testi__text::-webkit-scrollbar-thumb {
+  background: #1cbbb4;
+  border: 1px solid #1cbbb4;
+}
 
 @media (min-width: 568px) {
   .testi__header {
@@ -1295,6 +1345,10 @@ p {
   border: 1px solid #666e83;
   padding: 5px 15px;
   width: 100%;
+  transition: all 0.25s linear;
+}
+.contact__input:focus, .contact__textArea:focus {
+  border-color: #4e5ac4;
 }
 
 .contact__textArea {
@@ -1336,7 +1390,11 @@ p {
   }
 
   .contact__input, .contact__textArea {
-    border: 0;
+    border-color: transparent;
+    padding: 15px 30px;
+  }
+  .contact__input:focus, .contact__textArea:focus {
+    border-color: #4e5ac4;
   }
 
   .contact__header {
