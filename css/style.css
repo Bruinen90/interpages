@@ -5,6 +5,14 @@
 *:focus {
   outline: none;
 }
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 4px;
+}
+*::-webkit-scrollbar-thumb {
+  background: #1cbbb4;
+  border: 1px solid #1cbbb4;
+}
 
 body {
   padding: 0;
@@ -286,6 +294,7 @@ p {
     align-items: flex-start;
     min-height: 600px;
     padding-bottom: 100px;
+    padding-left: 60px;
   }
 
   .welcome__header {
@@ -1085,13 +1094,6 @@ p {
   max-height: 220px;
   overflow: auto;
 }
-.testi__text::-webkit-scrollbar {
-  width: 6px;
-}
-.testi__text::-webkit-scrollbar-thumb {
-  background: #1cbbb4;
-  border: 1px solid #1cbbb4;
-}
 
 @media (min-width: 568px) {
   .testi__header {
@@ -1194,9 +1196,9 @@ p {
   max-width: 1300px;
   padding: 0 15px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  flex-wrap: wrap;
+  overflow: scroll;
 }
 @media (min-width: 960px) {
   .logos__cont {
@@ -1211,17 +1213,22 @@ p {
 
 @media (min-width: 568px) {
   .logos {
-    padding: 60px 0;
+    padding: 90px 0;
   }
 
   .logos__cont {
-    justify-content: space-around;
+    padding: 0 30px;
   }
 
   .logos__img {
     width: auto;
     max-width: 250px;
     max-height: 250px;
+  }
+}
+@media (min-width: 960px) {
+  .logos__cont {
+    justify-content: space-around;
   }
 }
 .contact {
@@ -1245,7 +1252,6 @@ p {
   margin: auto;
   max-width: 1300px;
   padding: 0 15px;
-  border-bottom: 1px solid #e1e1e1;
   padding-bottom: 30px;
 }
 @media (min-width: 960px) {
@@ -1353,14 +1359,11 @@ p {
     font-size: 1em;
   }
 }
-.footer {
-  padding: 60px 0;
-}
-
 .footer__cont {
   margin: auto;
   max-width: 1300px;
   padding: 0 15px;
+  border-top: 1px solid #e1e1e1;
 }
 @media (min-width: 960px) {
   .footer__cont {
@@ -1409,6 +1412,7 @@ p {
     display: grid;
     grid-template-columns: 3fr 1fr 3fr 1fr;
     grid-gap: 60px;
+    padding: 60px;
   }
 
   .footer__header {
@@ -1515,13 +1519,21 @@ p {
   font-size: 18px;
   line-height: 24px;
   margin: 45px 0;
+  overflow: auto;
+  max-height: 320px;
 }
 
 .twoColumns--withBackground {
-  padding: 70px 0;
   background-image: url("../img/backgrounds/gradient_with_dots.png");
   background-size: cover;
   background-position: center;
+  padding-top: 70px;
+  padding-bottom: 0;
+}
+
+.twoColumns__cont--withBorder {
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 70px;
 }
 
 @media (min-width: 568px) {
@@ -1539,6 +1551,15 @@ p {
   .twoColumns__text {
     font-size: 22px;
     line-height: 40px;
+  }
+
+  .twoColumns--withBackground {
+    padding-top: 90px;
+    padding-bottom: 0;
+  }
+
+  .twoColumns__cont--withBorder {
+    padding-bottom: 120px;
   }
 }
 .threeSquares {
@@ -1703,7 +1724,7 @@ p {
   }
 }
 .heroWithBox {
-  margin-bottom: 150px;
+  margin-bottom: 240px;
 }
 
 .heroWithBox__cont {
@@ -1718,6 +1739,7 @@ p {
   align-items: center;
   justify-content: center;
   position: relative;
+  min-height: 450px;
 }
 @media (min-width: 960px) {
   .heroWithBox__cont {
@@ -1730,6 +1752,7 @@ p {
   font-size: 36px;
   line-height: 54px;
   text-align: center;
+  margin-top: -60px;
 }
 
 .heroWithBox__box {
@@ -1740,6 +1763,9 @@ p {
   transform: translateY(50%);
   position: absolute;
   bottom: 0;
+  left: 15px;
+  right: 15px;
+  margin: auto;
 }
 
 .heroWithBox__text {
@@ -1761,6 +1787,8 @@ p {
   }
 
   .heroWithBox__box {
+    left: auto;
+    right: auto;
     padding: 45px 90px;
   }
 
@@ -1769,6 +1797,166 @@ p {
     line-height: 40px;
     max-width: 750px;
   }
+}
+.contactGrid {
+  margin: 60px 0;
+}
+
+.contactGrid__cont {
+  margin: auto;
+  max-width: 1300px;
+  padding: 0 15px;
+}
+@media (min-width: 960px) {
+  .contactGrid__cont {
+    padding: 0 60px;
+  }
+}
+
+.contactGrid__header {
+  font-size: 36px;
+  line-height: 54px;
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.contactGrid__rowWithIcons {
+  display: grid;
+  grid-template: repeat(3, 1fr)/1fr 2fr;
+  grid-auto-flow: column;
+  grid-row-gap: 45px;
+  align-items: center;
+  max-width: 450px;
+  margin: auto;
+}
+
+.contactGrid__iconCont {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #e1e1e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.contactGrid__iconCont:after {
+  content: " ";
+  position: absolute;
+  left: calc(50% - 1px);
+  bottom: -45px;
+  width: 1px;
+  height: 45px;
+  background: #e1e1e1;
+}
+.contactGrid__iconCont:nth-child(3n):after {
+  display: none;
+}
+
+.contactGrid__icon {
+  width: 40%;
+  height: 40%;
+}
+
+.contactGrid__dataHeader {
+  margin: 0;
+}
+
+.contactGrid__rowWithBoxes {
+  margin: 45px 0;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+@media (min-width: 568px) {
+  .contactGrid {
+    margin: 120px 0;
+  }
+
+  .contactGrid__header {
+    font-size: 45px;
+    line-height: 68px;
+    margin-bottom: 90px;
+  }
+
+  .contactGrid__iconCont {
+    width: 100px;
+    height: 100px;
+  }
+
+  .contactGrid__dataCont {
+    font-size: 20px;
+  }
+
+  .contactGrid__dataHeader {
+    font-size: inherit;
+  }
+
+  .contactGrid__rowWithBoxes {
+    margin: 45px 0;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+}
+@media (min-width: 960px) {
+  .contactGrid__rowWithIcons {
+    grid-template: 1fr 1fr/repeat(3, 1fr);
+    grid-auto-flow: row;
+    justify-items: center;
+    max-width: 960px;
+    margin: auto;
+    margin-bottom: 90px;
+  }
+
+  .contactGrid__iconCont:after {
+    top: calc(50% - 1px);
+    right: -221px;
+    left: auto;
+    height: 1px;
+    width: 220px;
+  }
+  .contactGrid__iconCont:nth-child(3n):after {
+    display: none;
+  }
+
+  .contactGrid__dataCont {
+    text-align: center;
+  }
+
+  .contactGrid__dataHeader {
+    margin-bottom: 1em;
+  }
+}
+.contactBox {
+  width: 100%;
+  padding: 25px;
+  border: 1px solid #e1e1e1;
+}
+
+.contactBox__name {
+  margin: 0;
+  font-size: inherit;
+}
+
+.contactBox__position {
+  margin: 15px 0;
+}
+
+.contactBox__row {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.contactBox__icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

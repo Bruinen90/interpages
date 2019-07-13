@@ -1,5 +1,5 @@
 .heroWithBox {
-    margin-bottom: 150px;
+    margin-bottom: 240px;
 }
 
 .heroWithBox__cont {
@@ -12,12 +12,14 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    min-height: 450px;
 }
 
 .heroWithBox__header {
     color: #fff;
     @include header;
     text-align: center;
+    margin-top: -60px;
 }
 
 .heroWithBox__box {
@@ -28,6 +30,9 @@
     transform: translateY(50%);
     position: absolute;
     bottom: 0;
+    left: 15px;
+    right: 15px;
+    margin: auto;
 }
 
 .heroWithBox__text {
@@ -47,6 +52,8 @@
     }
 
     .heroWithBox__box {
+        left: auto;
+        right: auto;
         padding: 45px 90px;
     }
 

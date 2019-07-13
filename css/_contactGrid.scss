@@ -1,0 +1,132 @@
+.contactGrid {
+    margin: 60px 0;
+}
+
+.contactGrid__cont {
+    @include content;
+}
+
+.contactGrid__header {
+    @include header;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.contactGrid__rowWithIcons {
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr 2fr;
+    grid-auto-flow: column;
+    grid-row-gap: 45px;
+    align-items: center;
+    max-width: 450px;
+    margin: auto;
+}
+
+.contactGrid__iconCont {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid $color-light-grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &:after {
+        content: ' ';
+        position: absolute;
+        left: calc(50% - 1px);
+        bottom: -45px;
+        width: 1px;
+        height: 45px;
+        background: $color-light-grey;
+    }
+    &:nth-child(3n) {
+        &:after {
+            display: none;
+        }
+    }
+}
+
+.contactGrid__icon {
+    width: 40%;
+    height: 40%;
+}
+
+.contactGrid__dataHeader {
+    margin: 0;
+}
+
+.contactGrid__rowWithBoxes {
+    margin: 45px 0;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+@media (min-width: $tablet--min--width) {
+    .contactGrid {
+        margin: 120px 0;
+    }
+
+    .contactGrid__header {
+        @include desktopHeader;
+        margin-bottom: 90px;
+    }
+    
+    .contactGrid__iconCont {
+        width: 100px;
+        height: 100px;
+    }
+
+    .contactGrid__dataCont {
+        font-size: 20px;
+    }
+
+    .contactGrid__dataHeader {
+        font-size: inherit;
+    }
+
+    .contactGrid__rowWithBoxes {
+        margin: 45px 0;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+}
+
+@media (min-width: $desktop--min--width) {
+    .contactGrid__rowWithIcons {
+        grid-template: 1fr 1fr / repeat(3, 1fr);
+        grid-auto-flow: row;
+        justify-items: center;
+        max-width: 960px;
+        margin: auto;
+        margin-bottom: 90px;
+    }
+    
+    .contactGrid__iconCont {
+        &:after {
+            top: calc(50% - 1px);
+            right: -221px;
+            left: auto;
+            height: 1px;
+            width: 220px;
+        }
+        &:nth-child(3n) {
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    .contactGrid__dataCont {
+        text-align: center;
+    }
+    
+    .contactGrid__dataHeader {
+        margin-bottom: 1em; 
+    }
+}

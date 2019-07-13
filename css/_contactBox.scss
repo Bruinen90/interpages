@@ -1,0 +1,26 @@
+.contactBox {
+    width: 100%;
+    padding: 25px;
+    border: 1px solid $color-light-grey;
+}
+
+.contactBox__name {
+    margin: 0;
+    font-size: inherit;
+}
+
+.contactBox__position {
+    margin: 15px 0;
+}
+
+.contactBox__row {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+}
+
+.contactBox__icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}

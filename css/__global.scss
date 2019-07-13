@@ -4,6 +4,16 @@
     &:focus {
         outline: none;
     }
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 4px;
+    }
+    &::-webkit-scrollbar-track {
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $color-green;
+        border: 1px solid $color-green;
+    }
 }
 
 body {

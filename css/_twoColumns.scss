@@ -17,13 +17,21 @@
     font-size: 18px;
     line-height: 24px;
     margin: 45px 0;
+    overflow: auto;
+    max-height: 320px;
 }
 
 .twoColumns--withBackground {
-    padding: 70px 0;
     background-image: url('../img/backgrounds/gradient_with_dots.png');
     background-size: cover;
     background-position: center;
+    padding-top: 70px;
+    padding-bottom: 0;
+}
+
+.twoColumns__cont--withBorder {
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 70px;
 }
 
 @media (min-width: $tablet--min--width) {
@@ -41,5 +49,14 @@
     .twoColumns__text {
         font-size: 22px;
         line-height: 40px;
+    }
+
+    .twoColumns--withBackground {
+        padding-top: 90px;
+        padding-bottom: 0;
+    }
+    
+    .twoColumns__cont--withBorder {
+        padding-bottom: 120px;
     }
 }

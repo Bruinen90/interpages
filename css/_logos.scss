@@ -5,9 +5,9 @@
 .logos__cont {
     @include content;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    flex-wrap: wrap;
+    overflow: scroll;
 }
 
 .logos__img {
@@ -17,16 +17,23 @@
 
 @media (min-width: $tablet--min--width) {
     .logos {
-        padding: 60px 0;
+        padding: 90px 0;
     }
 
     .logos__cont {
-        justify-content: space-around;
+        padding: 0 30px;
+        // justify-content: space-around;
     }
 
     .logos__img {
         width: auto;
         max-width: 250px;
         max-height: 250px;
+    }
+}
+
+@media (min-width: $desktop--min--width) {
+    .logos__cont {
+        justify-content: space-around;
     }
 }
