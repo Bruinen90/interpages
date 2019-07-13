@@ -1,0 +1,14 @@
+.header {
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.5em;
+    max-width: 700px;
+    margin: 45px auto;
+}
+
+@media (min-width: $tablet--min--width) {
+    .header {
+        font-size: 45px;
+        margin: 120px auto;
+    }
+}

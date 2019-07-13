@@ -1957,4 +1957,47 @@ p {
   margin-right: 20px;
 }
 
+.header {
+  font-size: 36px;
+  text-align: center;
+  line-height: 1.5em;
+  max-width: 700px;
+  margin: 45px auto;
+}
+
+@media (min-width: 568px) {
+  .header {
+    font-size: 45px;
+    margin: 120px auto;
+  }
+}
+.porfolioSlider__cont {
+  margin: auto;
+  max-width: 1300px;
+  padding: 0 15px;
+}
+@media (min-width: 960px) {
+  .porfolioSlider__cont {
+    padding: 0 60px;
+  }
+}
+
+.slider {
+  width: 100%;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.projectGrid__decription {
+  grid-column-end: span 2;
+}
+
+.projectGrid__photo {
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */

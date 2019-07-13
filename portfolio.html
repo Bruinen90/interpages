@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap"
+            rel="stylesheet"
+        />
+        <title>Interpages</title>
+    </head>
+    <body>
+        <div class="cover cover--hidden" onclick="toggleMenu()"></div>
+        <nav class="navbar">
+            <div class="navbar__cont">
+                <img
+                    src="./img/logo.png"
+                    alt="Interpages"
+                    class="navbar__logo"
+                />
+                <button
+                    class="hamburger hamburger--spring"
+                    type="button"
+                    onclick="toggleMenu()"
+                >
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+
+                <div class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="./" class="menu__link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="services.html" class="menu__link">
+                                Services
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="about.html" class="menu__link">
+                                About
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="portfolio.html" class="menu__link">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="clients.html" class="menu__link">
+                                Clients
+                            </a>
+                        </li>
+                        <li class="menu__item menu__item--color">
+                            <a href="contact.html" class="menu__link">
+                                <button
+                                    class="button button--yellow button--small button--textOnMobile"
+                                >
+                                    Contact
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section
+            class="welcome"
+            style="background-image: url(./img/backgrounds/portfolio.png)"
+        >
+            <div class="welcome__cont">
+                <h1 class="welcome__header">
+                    Portfolio
+                </h1>
+                <h2 class="welcome__subHeader">
+                    Contrary to popular belief Lorem Ipsum is not simply
+                </h2>
+                <div class="welcome__pathCont">
+                    <a href="/" class="welcome__pathLink">Home</a>
+                    <span class="welcome__pathArrow">></span>
+                    <a
+                        href="/portfolio"
+                        class="welcome__pathLink welcome__pathLink--active"
+                        >Portfolio</a
+                    >
+                </div>
+            </div>
+        </section>
+
+        <h2 class="header">
+            We’ve done lot’s of work, Let’s Check some from here
+        </h2>
+
+        <section class="portfolioSlider">
+            <div class="portfolioSlider__cont">
+                <div class="slider">
+                    <div class="slider__cont">
+                        <div class="slider__slide">
+                            <div class="projectGrid">
+                                <div class="projectGrid__description">
+                                    <h2 class="projectGrid__header">
+                                        Please project title here
+                                    </h2>
+                                    <p class="projectGrid__text">
+                                        Lorem Ipsum is simply dummy text of the
+                                        printing and typesetting industry. has
+                                        been the industry.
+                                    </p>
+                                </div>
+                                <div class="projectGrid__info">
+                                    <div class="projectGrid__row">
+                                        <div class="projectGrid__feature">
+                                            Client
+                                        </div>
+                                        <div class="projectGrid__value">
+                                            Work Company
+                                        </div>
+                                    </div>
+                                    <div class="projectGrid__row">
+                                        <div class="projectGrid__feature">
+                                            Date
+                                        </div>
+                                        <div class="projectGrid__value">
+                                            24 Jun 2019
+                                        </div>
+                                    </div>
+                                    <div class="projectGrid__row">
+                                        <div class="projectGrid__feature">
+                                            Role
+                                        </div>
+                                        <div class="projectGrid__value">
+                                            Website development
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="projectGrid__photoCont projectGrid__photoCont--big"
+                                >
+                                    <img
+                                        src="./img/photos/slider/slider_1.png"
+                                        alt="Project photo"
+                                        class="projectGrid__photo"
+                                    />
+                                </div>
+                                <div class="projectGrid__photoCont">
+                                    <img
+                                        src="./img/photos/slider/slider_2.png"
+                                        alt="Project photo"
+                                        class="projectGrid__photo"
+                                    />
+                                </div>
+                                <div class="projectGrid__photoCont">
+                                    <img
+                                        src="./img/photos/slider/slider_3.png"
+                                        alt="Project photo"
+                                        class="projectGrid__photo"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__nav">
+                        <div class="slider__button">
+                            <img
+                                src="./img/icons/slider/arrow_left.svg"
+                                alt="Left arrow"
+                                class="slider__arrow"
+                            />
+                            <div class="slider__navText">
+                                Prev work
+                            </div>
+                        </div>
+                        <div class="slider__button">
+                            <img
+                                src="./img/icons/slider/arrow_right.svg"
+                                alt="Right arrow"
+                                class="slider__arrow"
+                            />
+                            <div class="slider__navText">
+                                Prev work
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="heroWithBox">
+            <div
+                class="heroWithBox__cont"
+                style="background-image: url('./img/backgrounds/looking_for_team.png')"
+            >
+                <h2 class="heroWithBox__header">
+                    Are you looking for the right team?
+                </h2>
+                <div class="heroWithBox__box">
+                    <p class="heroWithBox__text">
+                        Write to us or call us and find out that we will be the
+                        best alternative among the available development
+                        opportunities
+                    </p>
+                    <a
+                        href="email: interpages@interpages.com"
+                        class="heroWithBox__buttonCont"
+                    >
+                        <button class="button button--green">
+                            Get in touch
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__cont">
+                <div class="footer__logoCont">
+                    <img src="./img/logo.png" alt="" class="footer__logoImg" />
+                    <div class="footer__copy">
+                        All rights are reserved ©<span id="footer__date"></span>
+                    </div>
+                </div>
+                <div class="footer__help">
+                    <h5 class="footer__header">
+                        Help Links
+                    </h5>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Cutomer support</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Privacy policy</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Terms</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__services">
+                    <h5 class="footer__header">
+                        Services
+                    </h5>
+                    <ul class="footer__list footer__list--withColumns">
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Node.js</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">React.js</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">IOS</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Node.js</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">React.js</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">IOS</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Node.js</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">React.js</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">IOS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__socials">
+                    <h5 class="footer__header">
+                        Accounts
+                    </h5>
+                    <div class="footer__socialsCont">
+                        <a
+                            href="https://facebook.com/"
+                            class="footer__socialIconCont"
+                            target="_blank"
+                        >
+                            <img
+                                src="./img/icons/social/facebook.svg"
+                                alt=""
+                                class="footer__socialIcon"
+                            />
+                        </a>
+                        <a
+                            href="https://twitter.com/"
+                            class="footer__socialIconCont"
+                            target="_blank"
+                        >
+                            <img
+                                src="./img/icons/social/twitter.svg"
+                                alt=""
+                                class="footer__socialIcon"
+                            />
+                        </a>
+                        <a
+                            href="https://instagram.com/"
+                            class="footer__socialIconCont"
+                            target="_blank"
+                        >
+                            <img
+                                src="./img/icons/social/instagram.svg"
+                                alt=""
+                                class="footer__socialIcon"
+                            />
+                        </a>
+                        <a
+                            href="https://youtube.com/"
+                            class="footer__socialIconCont"
+                            target="_blank"
+                        >
+                            <img
+                                src="./img/icons/social/youtube.svg"
+                                alt=""
+                                class="footer__socialIcon"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="js/menu.js"></script>
+        <script type="text/javascript" src="js/triangleImg.js"></script>
+        <script type="text/javascript" src="js/projects.js"></script>
+        <!-- <script type="text/javascript" src="js/logos.js"></script> -->
+
+        <script type="text/javascript">
+            const currDate = new Date();
+            document.querySelector("#footer__date").innerHTML =
+                currDate.getYear() + 1900;
+        </script>
+    </body>
+</html>

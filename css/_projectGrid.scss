@@ -1,0 +1,17 @@
+.projectGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.projectGrid__decription {
+    grid-column-end: span 2;
+}
+
+.projectGrid__photoCont {
+
+}
+
+.projectGrid__photo {
+    width: 100%;
+}
