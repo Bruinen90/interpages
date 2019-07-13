@@ -369,10 +369,6 @@ p {
   margin-bottom: 15px;
 }
 
-.menu__item--color {
-  color: #1cbbb4;
-}
-
 @media (min-width: 960px) {
   .menu {
     position: relative;
@@ -480,6 +476,7 @@ p {
   height: auto;
   color: inherit;
   font-size: inherit;
+  font-weight: lighter;
   padding: 0;
   margin: 0;
 }
@@ -524,6 +521,7 @@ p {
     height: 65px;
     color: #fff;
     text-shadow: none;
+    font-weight: normal;
   }
   .button--textOnMobile:after {
     background: #e7a42e;
