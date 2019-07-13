@@ -1,0 +1,45 @@
+.twoColumns {
+    margin: 30px 0;
+}
+
+.twoColumns__cont {
+    @include content ;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.twoColumns__header {
+    font-size: 36px;
+    margin: 0;
+}
+
+.twoColumns__text {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 45px 0;
+}
+
+.twoColumns--withBackground {
+    padding: 70px 0;
+    background-image: url('../img/backgrounds/gradient_with_dots.png');
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width: $tablet--min--width) {
+    .twoColumns__cont {
+        display: grid;
+        grid-template-columns: 0.95fr 1.05fr;
+        grid-gap: 90px;
+        align-items: center;
+    }
+
+    .twoColumns__header {
+        font-size: 45px;
+    }
+    
+    .twoColumns__text {
+        font-size: 22px;
+        line-height: 40px;
+    }
+}

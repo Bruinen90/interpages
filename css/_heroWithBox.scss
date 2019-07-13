@@ -1,0 +1,58 @@
+.heroWithBox {
+    margin-bottom: 150px;
+}
+
+.heroWithBox__cont {
+    @include content;
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.heroWithBox__header {
+    color: #fff;
+    @include header;
+    text-align: center;
+}
+
+.heroWithBox__box {
+    background-color: #fff;
+    padding: 45px 15px;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    transform: translateY(50%);
+    position: absolute;
+    bottom: 0;
+}
+
+.heroWithBox__text {
+    @include mediumText;
+    margin-bottom: 30px;
+}
+
+@media (min-width: $desktop--min--width) {
+    .heroWithBox__cont {
+        min-height: 530px;
+    }
+
+    .heroWithBox__header {
+        color: #fff;
+        @include desktopHeader;
+        max-width: 537px;
+    }
+
+    .heroWithBox__box {
+        padding: 45px 90px;
+    }
+
+    .heroWithBox__text {
+        font-size: 22px;
+        line-height: 40px;
+        max-width: 750px;
+    }
+}

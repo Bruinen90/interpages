@@ -1,23 +1,26 @@
 .welcome {
     position: relative;
     overflow: hidden;
+    background-size: cover;
+    background-position: 60% 100%;
 }
 
 .welcome__cont {
     @include content;
     display: grid;
     align-items: center;
-    grid-template-rows: 3fr 3fr 1fr;
+    grid-template-rows: 1.5fr 2fr .75fr;
     padding-top: 60px;
     padding-bottom: 60px;
     z-index: 5;
     position: relative;
+    color: #fff;
+    min-height: 60vh;
 }
 
 .welcome__header {
     margin: 0;
-    color: #fff;
-    font-size: 30px;
+    font-size: 36px;
     font-weight: bold;
     line-height: 1.5em;
     margin-bottom: 30px;
@@ -25,29 +28,45 @@
     width: 70%;
 }
 
-.welcome__bckCont {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: -37px;
-    right: 0;
-    z-index: 4;
-    height: 100%;
+.welcome__subHeader {
+    font-size: 24px;
+    font-weight: normal;
 }
 
-.welcome__bckImg {
-    height: 100%;
-    transform: scaleX(.7);
-    transform-origin: left center;
+.welcome__pathArrow {
+    margin: 0 15px;
 }
 
-.welcome__laptopCont {
-    text-align: center;
+.welcome__pathLink--active {
+    pointer-events: none;
+    color: $color-green;
 }
 
-.welcome__laptopImg {
-    width: 80%;
-}
+// .welcome__bckCont {
+//     display: block;
+//     position: absolute;
+//     top: 0;
+//     left: -37px;
+//     right: 0;
+//     z-index: 4;
+//     height: 100%;
+//     background-position: center;
+//     background-size: cover;
+// }
+
+// .welcome__bckImg {
+//     height: 100%;
+//     transform: scaleX(.7);
+//     transform-origin: left center;
+// }
+
+// .welcome__laptopCont {
+//     text-align: center;
+// }
+
+// .welcome__laptopImg {
+//     width: 80%;
+// }
 
 .welcome__buttonCont {
     text-align: center;
@@ -55,7 +74,7 @@
 
 @media (min-width: $tablet--min--width) {
     .welcome {
-        background-image: none;
+        background-position-x: 20%;
         margin-top:  -130px;
         padding-top: 90px;
     }
@@ -66,51 +85,70 @@
         justify-content: center;
         align-items: flex-start;
         min-height: 600px;
+        padding-bottom: 100px;
     }
 
-    .welcome__bckCont {
-        bottom: 12px;
-        left: -37px;
-        right: 0;
-        top: auto;
-        height: auto;
-    }
+    // .welcome__bckCont {
+    //     bottom: 12px;
+    //     left: -37px;
+    //     right: 0;
+    //     top: auto;
+    //     height: auto;
+    // }
 
-    .welcome__bckImg {
-        transform: none;
-        width: 125%;
-        height: auto;
-    }
+    // .welcome__bckImg {
+    //     transform: none;
+    //     width: 125%;
+    //     height: auto;
+    // }
 
-    .welcome__bckLeftImg {
-        width: 100%;
-        z-index: 2;
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
+    // .welcome__bckLeftImg {
+    //     width: 100%;
+    //     z-index: 2;
+    //     position: absolute;
+    //     left: 0;
+    //     top: 0;
+    // }
 
     .welcome__header {
         width: 50%;
         font-size: 40px;
+        margin-bottom: .5em;
     }
 
-    .welcome__laptopCont {
-        position: absolute;
-        right: -12%;
-        width: 50%;
-    }
+    // .welcome__laptopCont {
+    //     position: absolute;
+    //     right: -12%;
+    //     width: 50%;
+    // }
 
-    .welcome__laptopImg {
-        width: 100%;
-    }
+    // .welcome__laptopImg {
+    //     width: 100%;
+    // }
 
     .welcome__buttonCont {
         text-align: left;
     }
+
+    .welcome__header {
+        font-size: 52px;
+    }
+
+    .welcome__subHeader {
+        font-weight: bold;
+        font-size: 36px;
+        max-width: 550px;
+    }
+
+    .welcome__pathCont {
+        font-size: 16px;
+    }
 }
 
 @media (min-width: $desktop--min--width) {
+    .welcome {
+        background-position-x: 0;
+    }
 }
 
 @media (min-width: $big--desktop--min--width) {
@@ -118,21 +156,26 @@
         min-height: 750px;
     }
 
-    .welcome__bckImg {
-        width: 100%;
-    }
+    // .welcome__bckImg {
+    //     width: 100%;
+    // }
 
     .welcome__header {
-         font-size: 52px;
-         margin-bottom: 80px;
+        font-size: 85px;
+        margin-bottom: 40px;
     }
 
-    .welcome__laptopCont {
-        right: -25%;
+    .welcome__header--home {
+        font-size: 52px;
+        margin-bottom: 80px;
     }
 
-    .welcome__laptopImg {
-        width: 42vw;
-        max-width: 800px;
-    }
+    // .welcome__laptopCont {
+    //     right: -25%;
+    // }
+
+    // .welcome__laptopImg {
+    //     width: 42vw;
+    //     max-width: 800px;
+    // }
 }

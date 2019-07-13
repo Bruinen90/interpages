@@ -25,10 +25,21 @@ const testiOutput = testiArr.map((client, index) => {
     return(
         `<div class="testi__slide">
             <div class="testi__clientCont">
-                <div class="testi__imgCont">
-                    <div class="testi__img" style="background-image: url('./img/client_${index+1}.jpg')"></div>
-                    <img src="/img/testi_egg.svg" alt="" class="testi__egg" />
-                    <img src="/img/testi_border.svg" alt="" class="testi__egg testi__egg--frame" />
+                <div class="triangleImg">
+                    <div
+                        class="triangleImg__img"
+                        style="background-image: url('./img/client_${index+1}.jpg')"
+                    ></div>
+                    <img
+                        src="/img/triangleImg_egg.svg"
+                        alt=""
+                        class="triangleImg__egg"
+                    />
+                    <img
+                        src="/img/triangleImg_border.svg"
+                        alt=""
+                        class="triangleImg__egg triangleImg__egg--frame"
+                    />
                 </div>
                 <div class="testi__clientHeaders">
                     <h5 class="testi__name">

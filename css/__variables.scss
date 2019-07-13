@@ -29,3 +29,18 @@ $shadow-light: rgba(0,0,0,.1);
     top: 0;
     bottom: 0;
 }
+
+@mixin header {
+    font-size: 36px;
+    line-height: 54px;
+}
+
+@mixin desktopHeader {
+    font-size: 45px;
+    line-height: 68px;
+}
+
+@mixin mediumText {
+    font-size: 18px;
+    line-height: 32px;
+}

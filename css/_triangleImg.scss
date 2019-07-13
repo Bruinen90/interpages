@@ -1,0 +1,105 @@
+.triangleImg {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.triangleImg__img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    clip-path: url(#triangleImgShape);
+    z-index: 2;
+}
+
+.triangleImg__egg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-1px);
+}
+
+.triangleImg__egg--frame {
+    transform: translateX(-6px) translateY(12%);
+}
+
+#triangleImgShape {
+    transform: scale(0.41);
+}
+
+.triangleImg--big {
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    .triangleImg__egg--frame {
+        transform: translateX(-16px) translateY(12%);
+    }
+    #triangleImgShape {
+        transform: scale(1);
+    }
+}
+
+@media (min-width: $tablet--min--width) {
+    .triangleImg__header {
+        margin: auto;
+        width: 50%;
+        text-align: center;
+        font-size: 45px;
+        line-height: 68px;
+    }
+
+    .triangleImg {
+        width: 200px;
+        height: 200px;
+    }
+
+    #triangleImgShape {
+        transform: scale(0.8);
+    }
+
+    .triangleImg--big {
+        width: 350px;
+        height: 350px;
+        .triangleImg__egg--frame {
+            transform: translateX(-16px) translateY(12%);
+        }
+        #triangleImgShape {
+            transform: scale(1.4);
+        }
+    }
+}
+
+
+@media (min-width: $desktop--min--width) {
+    .triangleImg {
+        width: 250px;
+        height: 250px;
+    }
+
+    #triangleImgShape {
+        transform: scale(1);
+    }
+
+    .triangleImg--big {
+        width: 500px;
+        height: 500px;
+        .triangleImg__egg {
+            animation: slowlyRotates 3s alternate ease-in-out infinite;
+        }
+        @keyframes slowlyRotates {
+            to {
+                transform: scale(1.1) translateX(-1px);
+            }
+        }
+        .triangleImg__egg--frame {
+            transform: translateX(-16px) translateY(12%);
+            animation: none;
+        }
+        #triangleImgShape {
+            transform: scale(2);
+        }
+    }
+}
