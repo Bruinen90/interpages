@@ -252,6 +252,10 @@ p {
   }
 }
 
+.welcome__cont--home {
+  display: block;
+}
+
 .welcome__header {
   margin: 0;
   font-size: 36px;

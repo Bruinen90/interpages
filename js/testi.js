@@ -31,12 +31,12 @@ const testiOutput = testiArr.map((client, index) => {
                         style="background-image: url('./img/client_${index+1}.jpg')"
                     ></div>
                     <img
-                        src="/img/triangleImg_egg.svg"
+                        src="./img/triangleImg_egg.svg"
                         alt=""
                         class="triangleImg__egg"
                     />
                     <img
-                        src="/img/triangleImg_border.svg"
+                        src="./img/triangleImg_border.svg"
                         alt=""
                         class="triangleImg__egg triangleImg__egg--frame"
                     />
