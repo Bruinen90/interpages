@@ -1,12 +1,15 @@
+.servicesGrid {
+    margin-bottom: 90px;
+}
+
 .servicesGrid__row {
     display: flex;
     flex-direction: column-reverse;
     padding-top: 60px;
     padding-bottom: 90px; 
-}
-
-.servicesGrid__row--withBackground {
-    background-color: #ebf8fb;
+    &:nth-child(2n) {
+        background-color: #ebf8fb;
+    }
 }
 
 .servicesGrid__rowCont {
@@ -59,6 +62,7 @@
     width: 80%;
     position: relative;
     z-index: 1;
+    border-radius: 30px;
 }
 
 .servicesGrid__corner--right {
@@ -71,16 +75,12 @@
     bottom: 0;
 }
 
-@media (min-width: $desktop--min--width) {
-    .servicesGrid__rowCont {
-        display: grid;
-        grid-template-columns: 4fr 3fr;
-        grid-gap: 70px;
-        padding-top: 90px;
-        padding-bottom: 120px; 
+@media (min-width: $tablet--min--width) {
+    .servicesGrid {
+        margin-bottom: 90px;
     }
-    
-    .servicesGrid__row--withBackground {
+
+    .servicesGrid__row:nth-child(2n) {
         .servicesGrid__rowCont {
             grid-template-columns: 3fr 4fr;
         }
@@ -94,6 +94,15 @@
             grid-row-start: 1;
         }
     }
+
+    .servicesGrid__rowCont {
+        display: grid;
+        grid-template-columns: 4fr 3fr;
+        grid-gap: 70px;
+        align-items: center;
+        padding-top: 60px;
+        padding-bottom: 90px; 
+    }
     
     .servicesGrid__text {
         font-size: 20px;
@@ -104,5 +113,16 @@
     
     .servicesGrid__header {
     
+    }
+}
+
+@media (min-width: $desktop--min--width) {
+    .servicesGrid {
+        margin-bottom: 120px;
+    }
+
+    .servicesGrid__rowCont {
+        padding-top: 90px;
+        padding-bottom: 120px; 
     }
 }
