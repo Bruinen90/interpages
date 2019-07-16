@@ -56,6 +56,19 @@
     }
 }
 
+.button--justFrame {
+    border: 1px solid #a1a1a1;
+    background: transparent;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #9f9f9f;
+    &:after {
+        border-width: 1px;
+        transform: translateY(100%);
+        background-color: $color-orange;
+    }
+}
+
 
 @media (min-width: $desktop--min--width) {
     .button {
@@ -67,6 +80,16 @@
             &:after {
                 transform: translateY(100%);
             }
+        }
+    }
+
+    .button--justFrame:hover {
+        border: 1px solid $color-orange;
+        background: transparent;
+        color: #fff;
+        font-weight: bold;
+        &:after {
+            transform: none;
         }
     }
 

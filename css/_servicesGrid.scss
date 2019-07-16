@@ -1,0 +1,108 @@
+.servicesGrid__row {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 60px;
+    padding-bottom: 90px; 
+}
+
+.servicesGrid__row--withBackground {
+    background-color: #ebf8fb;
+}
+
+.servicesGrid__rowCont {
+    @include content;
+}
+
+.servicesGrid__textCol {
+
+}
+
+.servicesGrid__text {
+    text-align: justify;
+    hyphens: auto;
+}
+
+.servicesGrid__header {
+
+}
+
+.servicesGrid__button {
+    width: 135px;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.servicesGrid__buttonText {
+    margin-right: 8px;
+}
+
+.servicesGrid__arrow {
+    width: 22px;
+}
+
+.servicesGrid__imgCont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 25px 0;
+}
+
+.servicesGrid__corner {
+    position: absolute;
+    z-index: 0;
+    width: 65%;
+}
+
+.servicesGrid__img {
+    width: 80%;
+    position: relative;
+    z-index: 1;
+}
+
+.servicesGrid__corner--right {
+    right: 0;
+    top: 0;
+}
+
+.servicesGrid__corner--left {
+    left: 0;
+    bottom: 0;
+}
+
+@media (min-width: $desktop--min--width) {
+    .servicesGrid__rowCont {
+        display: grid;
+        grid-template-columns: 4fr 3fr;
+        grid-gap: 70px;
+        padding-top: 90px;
+        padding-bottom: 120px; 
+    }
+    
+    .servicesGrid__row--withBackground {
+        .servicesGrid__rowCont {
+            grid-template-columns: 3fr 4fr;
+        }
+        .servicesGrid__textCol {
+            grid-column-start: 2;
+        }
+    
+        
+        .servicesGrid__imgCol {
+            grid-column-start: 1;
+            grid-row-start: 1;
+        }
+    }
+    
+    .servicesGrid__text {
+        font-size: 20px;
+        line-height: 1.75em;
+        text-align: left;
+        hyphens: auto;
+    }
+    
+    .servicesGrid__header {
+    
+    }
+}

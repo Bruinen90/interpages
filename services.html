@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap"
+            rel="stylesheet"
+        />
+        <title>Interpages</title>
+    </head>
+    <body>
+        <div class="cover cover--hidden" onclick="toggleMenu()"></div>
+        <nav class="navbar">
+            <div class="navbar__cont">
+                <img
+                    src="./img/logo.png"
+                    alt="Interpages"
+                    class="navbar__logo"
+                />
+                <button
+                    class="hamburger hamburger--spring"
+                    type="button"
+                    onclick="toggleMenu()"
+                >
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+
+                <div class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="./" class="menu__link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="services.html" class="menu__link">
+                                Services
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="about.html" class="menu__link">
+                                About
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="portfolio.html" class="menu__link">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="clients.html" class="menu__link">
+                                Clients
+                            </a>
+                        </li>
+                        <li class="menu__item menu__item--color">
+                            <a href="contact.html" class="menu__link">
+                                <button
+                                    class="button button--yellow button--small button--textOnMobile"
+                                >
+                                    Contact
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section
+            class="welcome"
+            style="background-image: url(./img/backgrounds/service.png)"
+        >
+            <div class="welcome__cont">
+                <h1 class="welcome__header">
+                    Our Service
+                </h1>
+                <h2 class="welcome__subHeader">
+                    Contrary to popular belief Lorem Ipsum is not simply
+                </h2>
+                <div class="welcome__pathCont">
+                    <a href="/" class="welcome__pathLink">Home</a>
+                    <span class="welcome__pathArrow">></span>
+                    <a
+                        href="/services.html"
+                        class="welcome__pathLink welcome__pathLink--active"
+                        >Services</a
+                    >
+                </div>
+            </div>
+        </section>
+
+        <h2 class="header">
+            Interpages will help your business growing
+        </h2>
+
+        <section class="servicesGrid">
+            <article class="servicesGrid__row">
+                <div class="servicesGrid__rowCont">
+                    <div class="servicesGrid__textCol">
+                        <h2 class="servicesGrid__header">
+                            Website development
+                        </h2>
+                        <p class="servicesGrid__text">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley It is a long
+                            established fact that a reader will be distracted by
+                            the readable content The point of using Lorem Ipsum
+                            is that it has a more-or-less normal distribution.
+                        </p>
+                        <button
+                            class="servicesGrid__button button button--justFrame"
+                        >
+                            <span class="servicesGrid__buttonText">
+                                More
+                            </span>
+                            <img
+                                src="./img/icons/arrow_green.svg"
+                                alt="Arrow right"
+                                class="servicesGrid__arrow"
+                            />
+                        </button>
+                    </div>
+                    <div class="servicesGrid__imgCol">
+                        <div class="servicesGrid__imgCont">
+                            <img
+                                src="img/shapes/top_right_corner.png"
+                                alt=""
+                                class="servicesGrid__corner servicesGrid__corner--right"
+                            />
+                            <img
+                                src="img/shapes/bottom_left_green.png"
+                                alt=""
+                                class="servicesGrid__corner servicesGrid__corner--left"
+                            />
+                            <img
+                                src="img/photos/services/code.png"
+                                alt=""
+                                class="servicesGrid__img"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article
+                class="servicesGrid__row servicesGrid__row--withBackground"
+            >
+                <div class="servicesGrid__rowCont">
+                    <div class="servicesGrid__textCol">
+                        <h2 class="servicesGrid__header">
+                            Design Concept
+                        </h2>
+                        <p class="servicesGrid__text">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley It is a long
+                            established fact that a reader will be distracted by
+                            the readable content The point of using Lorem Ipsum
+                            is that it has a more-or-less normal distribution.
+                        </p>
+                        <button
+                            class="servicesGrid__button button button--justFrame"
+                        >
+                            <span class="servicesGrid__buttonText">
+                                More
+                            </span>
+                            <img
+                                src="./img/icons/arrow_green.svg"
+                                alt="Arrow right"
+                                class="servicesGrid__arrow"
+                            />
+                        </button>
+                    </div>
+                    <div class="servicesGrid__imgCol">
+                        <div class="servicesGrid__imgCont">
+                            <img
+                                src="img/shapes/top_right_corner.png"
+                                alt=""
+                                class="servicesGrid__corner servicesGrid__corner--right"
+                            />
+                            <img
+                                src="img/shapes/bottom_left_green.png"
+                                alt=""
+                                class="servicesGrid__corner servicesGrid__corner--left"
+                            />
+                            <img
+                                src="img/photos/services/design.png"
+                                alt=""
+                                class="servicesGrid__img"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__cont">
+                <div class="footer__logoCont">
+                    <img src="./img/logo.png" alt="" class="footer__logoImg" />
+                    <div class="footer__copy">
+                        All rights are reserved ©<span id="footer__date"></span>
+                    </div>
+                </div>
+                <div class="footer__help">
+                    <h5 class="footer__header">
+                        Help Links
+                    </h5>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Cutomer support</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Privacy policy</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Terms</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__services">
+                    <h5 class="footer__header">
+                        Services
+                    </h5>
+                    <ul class="footer__list footer__list--withColumns">
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Node.js</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">React.js</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">IOS</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Node.js</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">React.js</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">IOS</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Node.js</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">React.js</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">IOS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__socials">
+                    <h5 class="footer__header">
+                        Accounts
+                    </h5>
+                    <div class="footer__socialsCont">
+                        <a
+                            href="https://facebook.com/"
+                            class="footer__socialIconCont"
+                            target="_blank"
+                        >
+                            <img
+                                src="./img/icons/social/facebook.svg"
+                                alt=""
+                                class="footer__socialIcon"
+                            />
+                        </a>
+                        <a
+                            href="https://twitter.com/"
+                            class="footer__socialIconCont"
+                            target="_blank"
+                        >
+                            <img
+                                src="./img/icons/social/twitter.svg"
+                                alt=""
+                                class="footer__socialIcon"
+                            />
+                        </a>
+                        <a
+                            href="https://instagram.com/"
+                            class="footer__socialIconCont"
+                            target="_blank"
+                        >
+                            <img
+                                src="./img/icons/social/instagram.svg"
+                                alt=""
+                                class="footer__socialIcon"
+                            />
+                        </a>
+                        <a
+                            href="https://youtube.com/"
+                            class="footer__socialIconCont"
+                            target="_blank"
+                        >
+                            <img
+                                src="./img/icons/social/youtube.svg"
+                                alt=""
+                                class="footer__socialIcon"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="js/menu.js"></script>
+        <script type="text/javascript" src="js/triangleImg.js"></script>
+        <script type="text/javascript" src="js/projects.js"></script>
+        <script type="text/javascript" src="js/slider.js"></script>
+        <!-- <script type="text/javascript" src="js/logos.js"></script> -->
+
+        <script type="text/javascript">
+            const currDate = new Date();
+            document.querySelector("#footer__date").innerHTML =
+                currDate.getYear() + 1900;
+        </script>
+    </body>
+</html>
