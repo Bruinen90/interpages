@@ -1,0 +1,87 @@
+.workGrid {
+    @include content;
+    margin: 60px auto;
+}
+
+.workGrid__imgCont {
+    width: 100%;
+    margin: 30px 0;
+    position: relative;
+}
+
+.workGrid__mainTriangle {
+    width: 92%;
+    animation: rotateSlowlyLeft 10s ease-in-out infinite alternate;
+}
+
+.workGrid__rightTriangle {
+    width: 90%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: rotateSlowly 10s ease-in-out infinite alternate;
+}
+
+@keyframes rotateSlowly {
+    to {
+        transform: translateY(-50%) rotate(80deg);
+    }
+}
+
+@keyframes rotateSlowlyLeft {
+    to {
+        transform: rotate(-80deg);
+    }
+}
+
+.workGrid__img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.workGrid__projectTitle {
+    font-size: 28px;
+    line-height: 1.5em;
+}
+
+.workGrid__text {
+    font-size: 18px;
+    margin: 30px 0;
+}
+
+.workGrid__projectInfoCont {
+    margin: 30px 0;
+}
+
+@media (min-width: $desktop--min--width) {
+    .workGrid {
+        margin: 90px auto;
+        display: grid;
+        grid-template-columns: 4fr 1fr; 
+    }
+
+    .workGrid__projectsCont {
+        grid-row-start: 2;
+        grid-column-start: span 2;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+        grid-gap: 15px;
+    }
+
+    .workGrid__projectTitle {
+        font-size: 34px;
+    }
+
+    .workGrid__text {
+        font-size: 20px;
+        line-height: 35px;
+        margin: 60px 0;
+    }
+}

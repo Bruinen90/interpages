@@ -6,9 +6,22 @@
     margin: 45px auto;
 }
 
+.header--medium {
+    font-size: 32px;
+    text-align: left;
+    max-width: 500px;
+}
+
 @media (min-width: $tablet--min--width) {
     .header {
         font-size: 45px;
         margin: 120px auto;
+    }
+
+    .header--medium {
+        font-size: 40px;
+        text-align: left;
+        margin: 0;
+        margin-bottom: 45px;
     }
 }

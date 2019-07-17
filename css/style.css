@@ -1992,10 +1992,23 @@ p {
   margin: 45px auto;
 }
 
+.header--medium {
+  font-size: 32px;
+  text-align: left;
+  max-width: 500px;
+}
+
 @media (min-width: 568px) {
   .header {
     font-size: 45px;
     margin: 120px auto;
+  }
+
+  .header--medium {
+    font-size: 40px;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 45px;
   }
 }
 .portfolioSlider__cont {
@@ -2211,6 +2224,15 @@ p {
   border-radius: 30px;
 }
 
+.servicesGrid__row--withBackground {
+  background-color: #ebf8fb;
+}
+
+.servicesGrid__button--big {
+  width: 180px;
+  height: 55px;
+}
+
 .servicesGrid__corner--right {
   right: 0;
   top: 0;
@@ -2251,6 +2273,29 @@ p {
     line-height: 1.75em;
     text-align: left;
     hyphens: auto;
+  }
+
+  .servicesGrid__row--withBackground .servicesGrid__rowCont {
+    padding: 45px 60px;
+  }
+  .servicesGrid__row--withBackground .servicesGrid__header {
+    font-size: 40px;
+    line-height: 62px;
+  }
+  .servicesGrid__row--withBackground .servicesGrid__text {
+    font-size: 22px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  .servicesGrid__row--withBackground .servicesGrid__rowCont {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 120px;
+  }
+
+  .servicesGrid__button--big {
+    width: 200px;
+    height: 65px;
+    font-size: 20px;
   }
 }
 @media (min-width: 960px) {
@@ -2346,6 +2391,98 @@ p {
   }
   .iconWithHeader__link:hover {
     color: #e7a42e;
+  }
+}
+.workGrid {
+  margin: auto;
+  max-width: 1300px;
+  padding: 0 15px;
+  margin: 60px auto;
+}
+@media (min-width: 960px) {
+  .workGrid {
+    padding: 0 60px;
+  }
+}
+
+.workGrid__imgCont {
+  width: 100%;
+  margin: 30px 0;
+  position: relative;
+}
+
+.workGrid__mainTriangle {
+  width: 92%;
+  animation: rotateSlowlyLeft 10s ease-in-out infinite alternate;
+}
+
+.workGrid__rightTriangle {
+  width: 90%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: rotateSlowly 10s ease-in-out infinite alternate;
+}
+
+@keyframes rotateSlowly {
+  to {
+    transform: translateY(-50%) rotate(80deg);
+  }
+}
+@keyframes rotateSlowlyLeft {
+  to {
+    transform: rotate(-80deg);
+  }
+}
+.workGrid__img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.workGrid__projectTitle {
+  font-size: 28px;
+  line-height: 1.5em;
+}
+
+.workGrid__text {
+  font-size: 18px;
+  margin: 30px 0;
+}
+
+.workGrid__projectInfoCont {
+  margin: 30px 0;
+}
+
+@media (min-width: 960px) {
+  .workGrid {
+    margin: 90px auto;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+  }
+
+  .workGrid__projectsCont {
+    grid-row-start: 2;
+    grid-column-start: span 2;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    grid-gap: 15px;
+  }
+
+  .workGrid__projectTitle {
+    font-size: 34px;
+  }
+
+  .workGrid__text {
+    font-size: 20px;
+    line-height: 35px;
+    margin: 60px 0;
   }
 }
 

@@ -65,6 +65,15 @@
     border-radius: 30px;
 }
 
+.servicesGrid__row--withBackground {
+    background-color: #ebf8fb;
+}
+
+.servicesGrid__button--big {
+    width: 180px;
+    height: 55px;
+}
+
 .servicesGrid__corner--right {
     right: 0;
     top: 0;
@@ -110,9 +119,34 @@
         text-align: left;
         hyphens: auto;
     }
+
+    .servicesGrid__row--withBackground {
+        .servicesGrid__rowCont {
+            padding: 45px 60px;
+        }
+
+        .servicesGrid__header {
+            font-size: 40px;
+            line-height: 62px;
+        }
+
+        .servicesGrid__text {
+            font-size: 22px;
+            line-height: 40px;
+            margin-bottom: 30px;
+        }
+
+        .servicesGrid__rowCont {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 120px;
+        }
+    }
     
-    .servicesGrid__header {
-    
+
+    .servicesGrid__button--big {
+        width: 200px;
+        height: 65px;
+        font-size: 20px;
     }
 }
 
