@@ -1,0 +1,21 @@
+.corner {
+    position: absolute;
+    z-index: 0;
+    width: 65%;
+    height: 85%;
+    background: linear-gradient(-135deg, #0bb39b, #278dad);
+    transform: skew(-24deg)
+}
+
+.corner--right {
+    right: 6%;
+    top: 0;
+    border-radius: 5px 120px 5px 0;
+}
+
+.corner--left {
+    left: 6%;
+    bottom: 0;
+    border-radius: 5px 0 5px 120px;
+    background: linear-gradient(45deg, #0bb39b, #278dad);
+}

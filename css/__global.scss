@@ -33,6 +33,17 @@ p {
     margin: 0;
 }
 
+//Safari resest
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+-webkit-appearance: none;
+border-radius: 0;
+}
+
 
 @media (min-width: $desktop--min--width) {
     body {

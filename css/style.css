@@ -31,6 +31,16 @@ p {
   margin: 0;
 }
 
+textarea,
+input.text,
+input[type=text],
+input[type=button],
+input[type=submit],
+.input-checkbox {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
 @media (min-width: 960px) {
   body {
     padding: 0;
@@ -867,6 +877,7 @@ p {
   grid-gap: 30px;
   position: absolute;
   left: 0;
+  right: 0;
   top: 0;
   height: 100%;
 }
@@ -888,6 +899,7 @@ p {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  width: 100%;
 }
 
 .projects__projectText {
@@ -2501,6 +2513,27 @@ p {
   .workGrid__projectsCont {
     grid-template-columns: 2fr 1fr;
   }
+}
+.corner {
+  position: absolute;
+  z-index: 0;
+  width: 65%;
+  height: 85%;
+  background: linear-gradient(-135deg, #0bb39b, #278dad);
+  transform: skew(-24deg);
+}
+
+.corner--right {
+  right: 6%;
+  top: 0;
+  border-radius: 5px 120px 5px 0;
+}
+
+.corner--left {
+  left: 6%;
+  bottom: 0;
+  border-radius: 5px 0 5px 120px;
+  background: linear-gradient(45deg, #0bb39b, #278dad);
 }
 
 /*# sourceMappingURL=style.css.map */
