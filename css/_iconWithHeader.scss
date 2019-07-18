@@ -7,10 +7,6 @@
     margin: 30px 0;
 }
 
-.iconWithHeader__iconCont {
-
-}
-
 .iconWithHeader__icon {
     width: 60px;
 }
@@ -34,6 +30,18 @@
     grid-column-start: span 2;
 }
 
+@media (min-width: $tablet--min--width) {
+    .iconWithHeader__icon {
+        width: 120px;
+    }
+
+    .iconWithHeader__header {
+        @include desktopHeader;
+        max-width: 320px;
+    }
+    
+}
+
 @media (min-width: $desktop--min--width) {
     .iconWithHeader {
         @include content;
@@ -41,17 +49,8 @@
         grid-template-columns: 1fr 3fr 1fr;
     }
     
-    .iconWithHeader__iconCont {
-    
-    }
-    
     .iconWithHeader__icon {
         width: 180px;
-    }
-    
-    .iconWithHeader__header {
-        @include desktopHeader;
-        max-width: 320px;
     }
 
     .iconWithHeader__text {

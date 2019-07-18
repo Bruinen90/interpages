@@ -25,13 +25,13 @@
 
 @keyframes rotateSlowly {
     to {
-        transform: translateY(-50%) rotate(80deg);
+        transform: translateY(-50%) rotate(80deg) rotateY(30deg);
     }
 }
 
 @keyframes rotateSlowlyLeft {
     to {
-        transform: rotate(-80deg);
+        transform: rotate(-80deg) rotateY(-30deg);
     }
 }
 
@@ -59,18 +59,18 @@
     margin: 30px 0;
 }
 
-@media (min-width: $desktop--min--width) {
+@media (min-width: $tablet--min--width) {
     .workGrid {
         margin: 90px auto;
         display: grid;
-        grid-template-columns: 4fr 1fr; 
+        grid-template-columns: 2fr 1fr; 
     }
 
     .workGrid__projectsCont {
         grid-row-start: 2;
         grid-column-start: span 2;
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 4fr 3fr;
         align-items: center;
         grid-gap: 15px;
     }
@@ -83,5 +83,19 @@
         font-size: 20px;
         line-height: 35px;
         margin: 60px 0;
+    }
+
+    .workGrid__buttonCont {
+        margin-left: auto;
+    }
+}
+
+@media (min-width: $desktop--min--width) {
+    .workGrid {
+        grid-template-columns: 4fr 1fr; 
+    }
+
+    .workGrid__projectsCont {
+        grid-template-columns: 2fr 1fr;
     }
 }
