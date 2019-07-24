@@ -119,6 +119,14 @@
         width: 50%;
         font-size: 40px;
         margin-bottom: .5em;
+        transform: translateX(-15px);
+        animation: welcome__headerFadeIn 2s linear forwards;
+    }
+    
+    @keyframes welcome__headerFadeIn {
+        to {
+            transform: none;
+        }
     }
 
     // .welcome__laptopCont {

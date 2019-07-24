@@ -20,6 +20,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   color: #21375e;
+  width: 100vw;
 }
 
 a {
@@ -313,8 +314,15 @@ input,
     width: 50%;
     font-size: 40px;
     margin-bottom: 0.5em;
+    transform: translateX(-15px);
+    animation: welcome__headerFadeIn 2s linear forwards;
   }
 
+  @keyframes welcome__headerFadeIn {
+    to {
+      transform: none;
+    }
+  }
   .welcome__buttonCont {
     text-align: left;
   }
@@ -401,6 +409,11 @@ input,
   opacity: 1;
 }
 
+.resetTransitionDelay {
+  transition-delay: 0ms !important;
+  transition-duration: 0ms !important;
+}
+
 .menu__list {
   list-style: none;
   padding: 0;
@@ -409,7 +422,7 @@ input,
 
 .menu__item {
   margin-bottom: 15px;
-  transition: all 0.5s 0.25s linear;
+  transition: all 0.5s linear;
   transform: translateY(-10px);
   opacity: 0;
 }
@@ -784,6 +797,10 @@ input,
     transform: rotate(-20deg) translateY(-15%);
   }
 }
+.growing {
+  overflow: hidden;
+}
+
 .growing__cont {
   margin: auto;
   max-width: 1300px;

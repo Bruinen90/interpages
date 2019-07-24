@@ -49,6 +49,12 @@
     }
 }
 
+// Better look when closing and opening menu quickly on mobile - reseting inline styles from menu.js
+.resetTransitionDelay {
+    transition-delay: 0ms !important;
+    transition-duration: 0ms !important;
+}
+
 .menu__list {
     list-style: none;
     padding: 0;
@@ -58,7 +64,7 @@
 .menu__item {
     margin-bottom: 15px;
     // New animation
-    transition: all .5s .25s linear;
+    transition: all .5s linear;
     transform: translateY(-10px);
     opacity: 0;
 }
