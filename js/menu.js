@@ -6,3 +6,9 @@ const toggleMenu = () => {
     menuToggler.classList.toggle('is-active');
     cover.classList.toggle('cover--hidden');
 }
+
+const menuItems = document.querySelectorAll('.menu__item');
+menuItems.forEach((item, index) => {
+    item.style.transitionDelay = 0.5+index/5+'s';
+    item.style.animationDelay = index/4+'s';
+})
