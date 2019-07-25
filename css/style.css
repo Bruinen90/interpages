@@ -1291,17 +1291,21 @@ input,
   }
 }
 .logos {
-  padding: 30px 0;
+  padding: 30px 0px;
+  overflow: hidden;
+  width: calc(100vw - 30px);
+  margin: auto;
 }
 
 .logos__cont {
   margin: auto;
   max-width: 1300px;
   padding: 0 15px;
+  padding: 0;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  overflow: scroll;
+  transition: all 0.5s ease-in-out;
 }
 @media (min-width: 960px) {
   .logos__cont {
@@ -1310,8 +1314,9 @@ input,
 }
 
 .logos__img {
-  width: 40%;
-  margin: 15px;
+  width: 40vw;
+  padding: 15px;
+  padding-left: 0;
 }
 
 @media (min-width: 568px) {
