@@ -19,5 +19,5 @@ if (window.innerWidth < 768) {
 	logosSwipeHandler.on("swiperight", function(ev) {
 		changeLogo(-1);
 	});
-	window.setInterval(() => changeLogo(1), 1000);
+	window.setInterval(() => changeLogo(1), 3000);
 }
