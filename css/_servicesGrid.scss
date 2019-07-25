@@ -1,5 +1,6 @@
 .servicesGrid {
     margin-bottom: 90px;
+    overflow-x: hidden;
 }
 
 .servicesGrid__row {
@@ -10,6 +11,7 @@
     &:nth-child(2n) {
         background-color: #ebf8fb;
     }
+    overflow: hidden;
 }
 
 .servicesGrid__rowCont {

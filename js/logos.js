@@ -4,7 +4,6 @@ if (window.innerWidth < 768) {
 	let currLogo = 0;
 	const changeLogo = direction => {
         let nextLogo = currLogo + direction;
-        console.log(nextLogo)
 		if (nextLogo < allLogos.length && nextLogo >= 0) {
 			currLogo = nextLogo;
 			logosCont.style.transform = `translateX(${40 * -currLogo}vw`;

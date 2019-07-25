@@ -7,7 +7,8 @@
 		<link
 			href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap"
 			rel="stylesheet"
-		/>
+        />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<title>Interpages</title>
 	</head>
 	<body>
@@ -92,10 +93,10 @@
 
 		<section class="contactGrid">
 			<div class="contactGrid__cont">
-				<h2 class="contactGrid__header">
+				<h2 class="contactGrid__header" data-aos="zoom-in">
 					Don’t Hesitate to contact with us
 				</h2>
-				<div class="contactGrid__rowWithIcons">
+				<div class="contactGrid__rowWithIcons"  data-aos="fade-up">
 					<div class="contactGrid__iconCont">
 						<img
 							src="./img/icons/contact/phone.svg"
@@ -152,7 +153,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="contactGrid__rowWithBoxes">
+				<div class="contactGrid__rowWithBoxes"  data-aos="flip-up">
 					<article class="contactBox">
 						<h5 class="contactBox__name">
 							Sebastian
@@ -225,51 +226,31 @@
 			</div>
 		</section>
 
-		<section class="contact">
-			<div class="contact__cont">
-				<div class="contact__info">
-					<h2 class="contact__header">
-						Don't hesitate to contact with us
-					</h2>
-					<span class="contact__bold">Phone: </span>
-					<a href="tel: 1234 02234421" class="contact__phone"
-						>1234 02234421</a
-					>
-					<br />
-					<span class="contact__bold">Email: </span>
-					<a href="mailto: info@interpages.com" class="contact__email"
-						>info@interpages.com</a
-					>
-					<a href="/blog/" class="contact__blog">
-						Visit out blog
-					</a>
-				</div>
-				<div class="contact__formCont">
-					<form action="POST" class="contact__form">
-						<input
-							type="text"
-							class="contact__input"
-							placeholder="Enter your name"
-						/>
-						<input
-							type="email"
-							class="contact__input"
-							placeholder="Enter your email"
-						/>
-						<textarea
-							class="contact__textArea"
-							placeholder="Enter your message"
-						></textarea>
-						<button
-							type="submit"
-							class="button contact__button button--violet"
-						>
-							Send message
-						</button>
-					</form>
-				</div>
-			</div>
-		</section>
+        <section class="contact">
+            <div class="contact__cont">
+                <div class="contact__info" data-aos="zoom-in-right">
+                    <h2 class="contact__header">
+                        Don't hesitate to contact with us
+                    </h2>
+                    <span class="contact__bold">Phone: </span>
+                        <a href="tel: 1234 02234421" class="contact__phone">1234 02234421</a>
+                    <br />
+                    <span class="contact__bold">Email: </span>
+                        <a href="mailto: info@interpages.com" class="contact__email">info@interpages.com</a>
+                    <a href="/blog/" class="contact__blog">
+                        Visit out blog
+                    </a>
+                </div>
+                <div class="contact__formCont" data-aos="zoom-in-left">
+                    <form action="POST" class="contact__form">
+                        <input type="text" class="contact__input" placeholder="Enter your name" />
+                        <input type="email" class="contact__input" placeholder="Enter your email" />
+                        <textarea class="contact__textArea" placeholder="Enter your message"></textarea>
+                        <button type="submit" class="button contact__button button--violet">Send message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
 
 		<footer class="footer">
 			<div class="footer__cont">
@@ -392,6 +373,11 @@
 			const currDate = new Date();
 			document.querySelector("#footer__date").innerHTML =
 				currDate.getYear() + 1900;
+        </script>
+		<!-- Animate on scroll library -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
 		</script>
 	</body>
 </html>

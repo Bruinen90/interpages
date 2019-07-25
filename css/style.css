@@ -1831,6 +1831,7 @@ input,
 }
 .heroWithBox {
   margin-bottom: 240px;
+  overflow: hidden;
 }
 
 .heroWithBox__cont {
@@ -2242,6 +2243,7 @@ input,
 }
 .servicesGrid {
   margin-bottom: 90px;
+  overflow-x: hidden;
 }
 
 .servicesGrid__row {
@@ -2249,6 +2251,7 @@ input,
   flex-direction: column-reverse;
   padding-top: 60px;
   padding-bottom: 90px;
+  overflow: hidden;
 }
 .servicesGrid__row:nth-child(2n) {
   background-color: #ebf8fb;

@@ -97,7 +97,7 @@ const changeSlide = (targetSlide) => {
 slider.innerHTML = testiOutput.join('');
 
 
-const testiSwipeHandler = new Hammer(slider);
+const testiSwipeHandler = new Hammer(document.querySelector('.testi__cont'));
 testiSwipeHandler.on('swipeleft', function(ev) {
     changeSlide(currSlide+1)
 });

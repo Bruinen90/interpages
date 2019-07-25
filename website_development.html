@@ -8,19 +8,23 @@
 			href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+			rel="stylesheet"
+		/>
 		<title>Interpages</title>
 	</head>
 	<body>
 		<div class="cover cover--hidden" onclick="toggleMenu()"></div>
 		<nav class="navbar">
 			<div class="navbar__cont">
-                <a href="./" class="navbar__logoCont">
-                    <img
-                        src="./img/logo.png"
-                        alt="Interpages"
-                        class="navbar__logo"
-                    />
-                </a>
+				<a href="./" class="navbar__logoCont">
+					<img
+						src="./img/logo.png"
+						alt="Interpages"
+						class="navbar__logo"
+					/>
+				</a>
 				<button
 					class="hamburger hamburger--spring"
 					type="button"
@@ -95,17 +99,17 @@
 		</section>
 
 		<section class="iconWithHeader">
-			<div class="iconWithHeader__iconCont">
+			<div class="iconWithHeader__iconCont" data-aos="flip-left" data-aos-anchor-placement="bottom-bottom">
 				<img
 					src="./img/icons/website.svg"
 					alt=""
 					class="iconWithHeader__icon"
 				/>
 			</div>
-			<h2 class="iconWithHeader__header">
+			<h2 class="iconWithHeader__header" data-aos="zoom-in">
 				Website development
 			</h2>
-			<p class="iconWithHeader__text" |>
+			<p class="iconWithHeader__text" data-aos="zoom-in-up">
 				Lorem Ipsum is simply dummy text of the printing and typesetting
 				industry. has been the industry's standard dummy text ever since
 				Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -122,7 +126,7 @@
 
 		<section class="servicesGrid__row servicesGrid__row--withBackground">
 			<div class="servicesGrid__rowCont">
-				<div class="servicesGrid__textCol">
+				<div class="servicesGrid__textCol" data-aos="zoom-in-right">
 					<h2 class="header--medium">
 						Please subtitle write here lorem
 					</h2>
@@ -141,9 +145,9 @@
 						</button>
 					</a>
 				</div>
-				<div class="servicesGrid__imgCol">
+				<div class="servicesGrid__imgCol" data-aos="zoom-in-left">
 					<div class="servicesGrid__imgCont">
-                        <div class="corner corner--right"></div>
+						<div class="corner corner--right"></div>
 						<div class="corner corner--left"></div>
 						<img
 							src="img/photos/services/website.png"
@@ -156,10 +160,10 @@
 		</section>
 
 		<section class="workGrid">
-			<h2 class="header header--medium">
+			<h2 class="header header--medium" data-aos="zoom-in">
 				Some of our work in website development
 			</h2>
-			<div class="workGrid__projectsCont">
+			<div class="workGrid__projectsCont" data-aos="flip-left">
 				<div class="workGrid__imgCont">
 					<img
 						src="./img/backgrounds/triangle_left.svg"
@@ -210,17 +214,19 @@
 					</div>
 				</div>
 			</div>
-            <a href="./portfolio.html" class="workGrid__buttonCont">
-                <button class="button button--green">
-                    All projects
-                </button>
-            </a>
+			<a href="./portfolio.html" class="workGrid__buttonCont">
+				<button class="button button--green">
+					All projects
+				</button>
+			</a>
 		</section>
 
 		<section class="heroWithBox">
 			<div
 				class="heroWithBox__cont"
-				style="background-image: url('./img/backgrounds/looking_for_team.png')"
+                style="background-image: url('./img/backgrounds/looking_for_team.png')"
+                data-aos="zoom-out"
+                data-aos-anchor-placement="center-bottom"
 			>
 				<h2 class="heroWithBox__header">
 					Are you looking for the right team?
@@ -243,51 +249,31 @@
 			</div>
 		</section>
 
-		<section class="contact">
-			<div class="contact__cont">
-				<div class="contact__info">
-					<h2 class="contact__header">
-						Don't hesitate to contact with us
-					</h2>
-					<span class="contact__bold">Phone: </span>
-					<a href="tel: 1234 02234421" class="contact__phone"
-						>1234 02234421</a
-					>
-					<br />
-					<span class="contact__bold">Email: </span>
-					<a href="mailto: info@interpages.com" class="contact__email"
-						>info@interpages.com</a
-					>
-					<a href="/blog/" class="contact__blog">
-						Visit out blog
-					</a>
-				</div>
-				<div class="contact__formCont">
-					<form action="POST" class="contact__form">
-						<input
-							type="text"
-							class="contact__input"
-							placeholder="Enter your name"
-						/>
-						<input
-							type="email"
-							class="contact__input"
-							placeholder="Enter your email"
-						/>
-						<textarea
-							class="contact__textArea"
-							placeholder="Enter your message"
-						></textarea>
-						<button
-							type="submit"
-							class="button contact__button button--violet"
-						>
-							Send message
-						</button>
-					</form>
-				</div>
-			</div>
-		</section>
+        <section class="contact">
+            <div class="contact__cont">
+                <div class="contact__info" data-aos="zoom-in-right">
+                    <h2 class="contact__header">
+                        Don't hesitate to contact with us
+                    </h2>
+                    <span class="contact__bold">Phone: </span>
+                        <a href="tel: 1234 02234421" class="contact__phone">1234 02234421</a>
+                    <br />
+                    <span class="contact__bold">Email: </span>
+                        <a href="mailto: info@interpages.com" class="contact__email">info@interpages.com</a>
+                    <a href="/blog/" class="contact__blog">
+                        Visit out blog
+                    </a>
+                </div>
+                <div class="contact__formCont" data-aos="zoom-in-left">
+                    <form action="POST" class="contact__form">
+                        <input type="text" class="contact__input" placeholder="Enter your name" />
+                        <input type="email" class="contact__input" placeholder="Enter your email" />
+                        <textarea class="contact__textArea" placeholder="Enter your message"></textarea>
+                        <button type="submit" class="button contact__button button--violet">Send message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
 
 		<footer class="footer">
 			<div class="footer__cont">
@@ -402,15 +388,19 @@
 		</footer>
 
 		<script type="text/javascript" src="js/menu.js"></script>
-		<script type="text/javascript" src="js/triangleImg.js"></script>
 		<script type="text/javascript" src="js/projects.js"></script>
-		<script type="text/javascript" src="js/slider.js"></script>
 		<!-- <script type="text/javascript" src="js/logos.js"></script> -->
 
 		<script type="text/javascript">
 			const currDate = new Date();
 			document.querySelector("#footer__date").innerHTML =
 				currDate.getYear() + 1900;
+		</script>
+
+		<!-- Animate on scroll library -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
 		</script>
 	</body>
 </html>
