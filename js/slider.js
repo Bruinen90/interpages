@@ -83,10 +83,8 @@ const projectsOutput = projectsArr.map((project, index) => {
 })
 
 const slider__slider = document.querySelector('.slider__cont');
-console.log(slider__slider)
 let currSlide__slider = 0;
 const changeSlide__slider = (targetSlide) => {
-    console.log('miau')
     if(targetSlide < 0) {
         currSlide__slider = projectsArr.length - 1;
     } else if (targetSlide >=projectsArr.length) {
@@ -97,4 +95,14 @@ const changeSlide__slider = (targetSlide) => {
     slider__slider.style.transform = `translateX(calc(${-currSlide__slider * 100}%)`
 }
 
-slider__slider.innerHTML = projectsOutput.join('');
+slider__slider.innerHTML = projectsOutput.join('')
+
+const slider__slide = document.querySelector('.portfolioSlider__cont');
+
+const sliderSwipeHandler = new Hammer(slider__slide);
+sliderSwipeHandler.on('swipeleft', function(ev) {
+    changeSlide__slider(currSlide__slider+1)
+});
+sliderSwipeHandler.on('swiperight', function(ev) {
+    changeSlide__slider(currSlide__slider-1)
+});

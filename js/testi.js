@@ -84,7 +84,6 @@ let currSlide = 0;
 const slider = document.querySelector('.testi__sliderCont');
 
 const changeSlide = (targetSlide) => {
-    console.log('miau')
     if(targetSlide < 0) {
         currSlide = testiArr.length - 1;
     } else if (targetSlide >=testiArr.length) {
@@ -96,3 +95,12 @@ const changeSlide = (targetSlide) => {
 }
 
 slider.innerHTML = testiOutput.join('');
+
+
+const testiSwipeHandler = new Hammer(slider);
+testiSwipeHandler.on('swipeleft', function(ev) {
+    changeSlide(currSlide+1)
+});
+testiSwipeHandler.on('swiperight', function(ev) {
+    changeSlide(currSlide-1)
+});
