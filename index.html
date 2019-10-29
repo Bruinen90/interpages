@@ -9,349 +9,384 @@
         <title>Interpages</title>
     </head>
     <body>
-        <div class="cover cover--hidden" onclick="toggleMenu()"></div>
-        <nav class="navbar">
-            <div class="navbar__cont">
-                <a href="./" class="navbar__logoCont">
-                    <img
-                        src="./img/logo.png"
-                        alt="Interpages"
-                        class="navbar__logo"
-                    />
-                </a>
-                <button class="hamburger hamburger--spring" type="button" onclick="toggleMenu()">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </button>
-
-                <div class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="./" class="menu__link menu__link--active">
-                                Home
-                            </a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="services.html" class="menu__link">
-                                Services
-                            </a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="about.html" class="menu__link">
-                                About
-                            </a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="portfolio.html" class="menu__link">
-                                Portfolio
-                            </a>
-                        </li>
-                        <li class="menu__item menu__item--color">
-                            <a href="contact.html" class="menu__link">
-                                <button class="button button--yellow button--small button--textOnMobile">
-                                    Contact
-                                </button>
-                            </a>
-                        </li>
-                    </ul>
+        <main id="swup" class="transition-fade">
+            <div class="cover cover--hidden" onclick="toggleMenu()"></div>
+            <nav class="navbar">
+                <div class="navbar__cont">
+                    <a href="/" class="navbar__logoCont">
+                        <img
+                            src="./img/logo.svg"
+                            alt="Interpages"
+                            class="navbar__logo"
+                        />
+                    </a>
+                    <button class="hamburger hamburger--spring" type="button" onclick="toggleMenu()">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+    
+                    <div class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="/" class="menu__link menu__link--active">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="/services.html" class="menu__link">
+                                    Services
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="about.html" class="menu__link">
+                                    About
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="portfolio.html" class="menu__link">
+                                    Portfolio
+                                </a>
+                            </li>
+                            <li class="menu__item menu__item--color">
+                                <a href="contact.html" class="menu__link">
+                                    <button class="button button--yellow button--small button--textOnMobile">
+                                        Contact
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+    
                 </div>
-
-            </div>
-        </nav>
-
-        <section class="welcome" style="background-image: url(./img/backgrounds/home.png)">
-            <!-- <div class="welcome__bckCont">
-                <img src="./img/shapes/hero_bck.svg" alt="" class="welcome__bckImg">
-            </div> -->
-            <div class="welcome__cont welcome__cont--home">
-                <h2 class="welcome__header welcome__header--home">
-                    We are the best
-                    turn your business
-                    to next level
-                </h2>
-                <!-- <div class="welcome__laptopCont">
-                    <img src="./img/laptop.svg" alt="" class="welcome__laptopImg">
+            </nav>
+    
+            <section class="welcome" style="background-image: url(./img/backgrounds/home.png)">
+                <!-- <div class="welcome__bckCont">
+                    <img src="./img/shapes/hero_bck.svg" alt="" class="welcome__bckImg">
                 </div> -->
-                <a href="/get_started.html" class="welcome__buttonCont">
-                    <button class="button button--green">
-                        Get started
-                    </button>
-                </a>
-            </div>
-        </section>
-
-        <section class="offerGrid">
-            <div class="offerGrid__cont">
-                <h2 class="offerGrid__header" data-aos="zoom-in">
-                    Interpages will help your business growing
-                </h2>
-                <div class="offerGrid__boxesCont">
-                    <div class="offerGrid__box offerGrid__box--green" data-aos="fade-up">
-                        <img src="./img/icons/code.svg" alt="" class="offerGrid__icon">
-                        <h5 class="offerGrid__title">
-                            Website development
-                        </h5>
-                        <div class="offerGrid__boxDesctiption">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil assumenda odit tenetur asperiores
-                        </div>
-                    </div>
-                    <div class="offerGrid__box offerGrid__box--orange" data-aos="fade-down">
-                        <img src="./img/icons/brushes.svg" alt="" class="offerGrid__icon">
-                        <h5 class="offerGrid__title">
-                            Design  concepts
-                        </h5>
-                        <div class="offerGrid__boxDesctiption">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil assumenda odit tenetur asperiores
-                        </div>
-                    </div>
-                    <div class="offerGrid__box offerGrid__box--violet" data-aos="fade-up">
-                        <img src="./img/icons/phone.svg" alt="" class="offerGrid__icon">
-                        <h5 class="offerGrid__title">
-                            Web & mobile  Apps
-                        </h5>
-                        <div class="offerGrid__boxDesctiption">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil assumenda odit tenetur asperiores
-                        </div>
-                    </div>
-                    <div class="offerGrid__box offerGrid__box--black" data-aos="fade-down">
-                        <img src="./img/icons/basket.svg" alt="" class="offerGrid__icon">
-                        <h5 class="offerGrid__title">
-                            Ecommerce development
-                        </h5>
-                        <div class="offerGrid__boxDesctiption">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil assumenda odit tenetur asperiores
-                        </div>
-                    </div>
-            </div>
-        </section>
-
-        <section class="growing">
-            <div class="growing__cont">
-                <div class="growing__iphoneCont" data-aos="fade-right">
-                    <img src="./img/mockup_iphone.svg" alt="" class="growing__iphoneImg">
-                </div>
-                <div class="growing__textCont" data-aos="fade-left">
-                    <h2 class="growing__header">
-                        Interpages will help your business growing
+                <div class="welcome__cont welcome__cont--home">
+                    <h2 class="welcome__header welcome__header--home">
+                        We are the best
+                        turn your business
+                        to next level
                     </h2>
-                    <p class="growing__description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ex est debitis tenetur deleniti culpa eaque tempore excepturi, officiis sunt.
-                    </p>
-                    <ul class="growing__list">
-                        <li class="growing__listItem">It is a long established fact that a reader will</li>
-                        <li class="growing__listItem">Lorem Ipsum as their default </li>
-                        <li class="growing__listItem">model textIt is a long established fact that </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="projects">
-            <div class="projects__bckCont">
-                <img src="./img/projects_bck.svg" alt="" class="projects__bckImg">
-            </div>
-            <div class="projects__cont">
-                <h2 class="projects__header" data-aos="zoom-in">
-                    We’ve done lot’s of work, Let’s
-                    Check some from here
-                </h2>
-                <div class="projects__projectsSlider" data-aos="zoom-out">
-                    <div class="projects__projectsBox projects__projectsBox--active">
-                        <div class="projects__project" style="background-image: url('./img/project_1.jpg')"></div>
-                        <div class="projects__project projects__project--center" style="background-image: url('./img/project_2.jpg')">
-                            <div class="projects__projectText">
-                                <h5 class="projects__projectHeader">
-                                    Project no 1
-                                </h5>
-                                <p class="projects__projectDesctipiton">
-                                    Website development
-                                </p>
-                            </div>
-                        </div>
-                        <div class="projects__project" style="background-image: url('./img/project_3.jpg')"></div>
-                    </div>
-                    <div class="projects__projectsBox">
-                        <div class="projects__project" style="background-image: url('./img/project_1.jpg')"></div>
-                        <div class="projects__project projects__project--center" style="background-image: url('./img/project_2.jpg')">
-                            <div class="projects__projectText">
-                                <h5 class="projects__projectHeader">
-                                    Project no 2
-                                </h5>
-                                <p class="projects__projectDesctipiton">
-                                    Website development
-                                </p>
-                            </div>
-                        </div>
-                        <div class="projects__project" style="background-image: url('./img/project_3.jpg')"></div>
-                    </div>
-                    <div class="projects__projectsBox">
-                        <div class="projects__project" style="background-image: url('./img/project_1.jpg')"></div>
-                        <div class="projects__project projects__project--center" style="background-image: url('./img/project_2.jpg')">
-                            <div class="projects__projectText">
-                                <h5 class="projects__projectHeader">
-                                    Project no 3
-                                </h5>
-                                <p class="projects__projectDesctipiton">
-                                    Website development
-                                </p>
-                            </div>
-                        </div>
-                        <div class="projects__project" style="background-image: url('./img/project_3.jpg')"></div>
-                    </div>
-                    <div class="projects__projectsBox">
-                        <div class="projects__project" style="background-image: url('./img/project_1.jpg')"></div>
-                        <div class="projects__project projects__project--center" style="background-image: url('./img/project_2.jpg')">
-                            <div class="projects__projectText">
-                                <h5 class="projects__projectHeader">
-                                    Project no 4
-                                </h5>
-                                <p class="projects__projectDesctipiton">
-                                    Website development
-                                </p>
-                            </div>
-                        </div>
-                        <div class="projects__project" style="background-image: url('./img/project_3.jpg')"></div>
-                    </div>
-                </div>
-                <div class="projects__sliderDots">
-                    <!-- Slider dots from project.js -->
-                </div>
-                <div class="projects__buttonCont" data-aos="zoom-in">
-                    <button class="button button--green">
-                        All projects
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <section class="testi">
-            <div class="testi__cont">
-                <h2 class="testi__header" data-aos="zoom-in">
-                    What our clients are saying
-                </h2>
-                <div class="testi__sliderCont" data-aos="zoom-in-up">
-                    <!-- here comes code from testi.js -->
-                </div>
-            </div>
-        </section>
-
-        <section class="logos">
-            <div class="logos__cont" data-aos="fade-up">
-                <img src="./img/logo_1.png" alt="" class="logos__img">
-                <img src="./img/logo_2.png" alt="" class="logos__img">
-                <img src="./img/logo_3.png" alt="" class="logos__img">
-                <img src="./img/logo_4.png" alt="" class="logos__img">
-                <img src="./img/logo_5.png" alt="" class="logos__img">
-            </div>
-        </section>
-
-        <section class="contact">
-            <div class="contact__cont">
-                <div class="contact__info" data-aos="zoom-in-right">
-                    <h2 class="contact__header">
-                        Don't hesitate to contact with us
-                    </h2>
-                    <span class="contact__bold">Phone: </span>
-                        <a href="tel: 1234 02234421" class="contact__phone">1234 02234421</a>
-                    <br />
-                    <span class="contact__bold">Email: </span>
-                        <a href="mailto: info@interpages.com" class="contact__email">info@interpages.com</a>
-                    <a href="/blog/" class="contact__blog">
-                        Visit out blog
+                    <!-- <div class="welcome__laptopCont">
+                        <img src="./img/laptop.svg" alt="" class="welcome__laptopImg">
+                    </div> -->
+                    <a href="/get_started.html" class="welcome__buttonCont">
+                        <button class="button button--green">
+                            Get started
+                        </button>
                     </a>
                 </div>
-                <div class="contact__formCont" data-aos="zoom-in-left">
-                    <form action="POST" class="contact__form">
-                        <input type="text" class="contact__input" placeholder="Enter your name" />
-                        <input type="email" class="contact__input" placeholder="Enter your email" />
-                        <textarea class="contact__textArea" placeholder="Enter your message"></textarea>
-                        <button type="submit" class="button contact__button button--violet">Send message</button>
-                    </form>
+            </section>
+    
+            <section class="offerGrid">
+                <div class="offerGrid__cont">
+                    <h2 class="offerGrid__header" data-aos="zoom-in">
+                        Interpages will help your business growing
+                    </h2>
+                    <div class="offerGrid__boxesCont">
+                        <div class="offerGrid__box offerGrid__box--green" data-aos="fade-up">
+                            <img src="./img/icons/code.svg" alt="" class="offerGrid__icon">
+                            <h5 class="offerGrid__title">
+                                Website development
+                            </h5>
+                            <div class="offerGrid__boxDesctiption">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil assumenda odit tenetur asperiores
+                            </div>
+                        </div>
+                        <div class="offerGrid__box offerGrid__box--orange" data-aos="fade-down">
+                            <img src="./img/icons/brushes.svg" alt="" class="offerGrid__icon">
+                            <h5 class="offerGrid__title">
+                                Design  concepts
+                            </h5>
+                            <div class="offerGrid__boxDesctiption">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil assumenda odit tenetur asperiores
+                            </div>
+                        </div>
+                        <div class="offerGrid__box offerGrid__box--violet" data-aos="fade-up">
+                            <img src="./img/icons/phone.svg" alt="" class="offerGrid__icon">
+                            <h5 class="offerGrid__title">
+                                Web & mobile  Apps
+                            </h5>
+                            <div class="offerGrid__boxDesctiption">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil assumenda odit tenetur asperiores
+                            </div>
+                        </div>
+                        <div class="offerGrid__box offerGrid__box--black" data-aos="fade-down">
+                            <img src="./img/icons/basket.svg" alt="" class="offerGrid__icon">
+                            <h5 class="offerGrid__title">
+                                Ecommerce development
+                            </h5>
+                            <div class="offerGrid__boxDesctiption">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil assumenda odit tenetur asperiores
+                            </div>
+                        </div>
                 </div>
-            </div>
-        </section>
-
-        <footer class="footer">
-            <div class="footer__cont">
-                <div class="footer__logoCont">
-                    <img src="./img/logo.png" alt="" class="footer__logoImg" />
-                    <div class="footer__copy">
-                        All rights are reserved ©<span id="footer__date"></span>
+            </section>
+    
+            <section class="growing">
+                <div class="growing__cont">
+                    <div class="growing__iphoneCont" data-aos="fade-right">
+                        <img src="./img/mockup_iphone.svg" alt="" class="growing__iphoneImg">
+                    </div>
+                    <div class="growing__textCont" data-aos="fade-left">
+                        <h2 class="growing__header">
+                            Interpages will help your business growing
+                        </h2>
+                        <p class="growing__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ex est debitis tenetur deleniti culpa eaque tempore excepturi, officiis sunt.
+                        </p>
+                        <ul class="growing__list">
+                            <li class="growing__listItem">It is a long established fact that a reader will</li>
+                            <li class="growing__listItem">Lorem Ipsum as their default </li>
+                            <li class="growing__listItem">model textIt is a long established fact that </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="footer__help">
-                    <h5 class="footer__header">
-                        Help Links
-                    </h5>
-                    <ul class="footer__list">
-                        <li class="footer__item">
-                            <a href="" class="footer__link">Cutomer support</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="" class="footer__link">Privacy policy</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="" class="footer__link">Terms</a>
-                        </li>
-                    </ul>
+            </section>
+    
+            <section class="projects">
+                <div class="projects__bckCont">
+                    <img src="./img/projects_bck.svg" alt="" class="projects__bckImg">
                 </div>
-                <div class="footer__services">
-                    <h5 class="footer__header">
-                        Services
-                    </h5>
-                    <ul class="footer__list footer__list--withColumns">
-                        <li class="footer__item">
-                            <a href="" class="footer__link">Node.js</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="" class="footer__link">React.js</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="" class="footer__link">IOS</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="" class="footer__link">Node.js</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="" class="footer__link">React.js</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="" class="footer__link">IOS</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="" class="footer__link">Node.js</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="" class="footer__link">React.js</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="" class="footer__link">IOS</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__socials">
-                    <h5 class="footer__header">
-                        Accounts
-                    </h5>
-                    <div class="footer__socialsCont">
-                        <a href="https://facebook.com/" class="footer__socialIconCont" target="_blank">
-                            <img src="./img/icons/social/facebook.svg" alt="" class="footer__socialIcon">
-                        </a>
-                        <a href="https://twitter.com/" class="footer__socialIconCont" target="_blank">
-                            <img src="./img/icons/social/twitter.svg" alt="" class="footer__socialIcon">
-                        </a>
-                        <a href="https://instagram.com/" class="footer__socialIconCont" target="_blank">
-                            <img src="./img/icons/social/instagram.svg" alt="" class="footer__socialIcon">
-                        </a>
-                        <a href="https://youtube.com/" class="footer__socialIconCont" target="_blank">
-                            <img src="./img/icons/social/youtube.svg" alt="" class="footer__socialIcon">
-                        </a>
+                <div class="projects__cont">
+                    <h2 class="projects__header" data-aos="zoom-in">
+                        We’ve done lot’s of work, Let’s
+                        Check some from here
+                    </h2>
+                    <div class="projects__projectsSlider" data-aos="zoom-out">
+                        <div class="projects__projectsBox projects__projectsBox--active">
+                            <div class="projects__project" style="background-image: url('./img/project_1.jpg')"></div>
+                            <div class="projects__project projects__project--center" style="background-image: url('./img/project_2.jpg')">
+                                <div class="projects__projectText">
+                                    <h5 class="projects__projectHeader">
+                                        Project no 1
+                                    </h5>
+                                    <p class="projects__projectDesctipiton">
+                                        Website development
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="projects__project" style="background-image: url('./img/project_3.jpg')"></div>
+                        </div>
+                        <div class="projects__projectsBox">
+                            <div class="projects__project" style="background-image: url('./img/project_1.jpg')"></div>
+                            <div class="projects__project projects__project--center" style="background-image: url('./img/project_2.jpg')">
+                                <div class="projects__projectText">
+                                    <h5 class="projects__projectHeader">
+                                        Project no 2
+                                    </h5>
+                                    <p class="projects__projectDesctipiton">
+                                        Website development
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="projects__project" style="background-image: url('./img/project_3.jpg')"></div>
+                        </div>
+                        <div class="projects__projectsBox">
+                            <div class="projects__project" style="background-image: url('./img/project_1.jpg')"></div>
+                            <div class="projects__project projects__project--center" style="background-image: url('./img/project_2.jpg')">
+                                <div class="projects__projectText">
+                                    <h5 class="projects__projectHeader">
+                                        Project no 3
+                                    </h5>
+                                    <p class="projects__projectDesctipiton">
+                                        Website development
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="projects__project" style="background-image: url('./img/project_3.jpg')"></div>
+                        </div>
+                        <div class="projects__projectsBox">
+                            <div class="projects__project" style="background-image: url('./img/project_1.jpg')"></div>
+                            <div class="projects__project projects__project--center" style="background-image: url('./img/project_2.jpg')">
+                                <div class="projects__projectText">
+                                    <h5 class="projects__projectHeader">
+                                        Project no 4
+                                    </h5>
+                                    <p class="projects__projectDesctipiton">
+                                        Website development
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="projects__project" style="background-image: url('./img/project_3.jpg')"></div>
+                        </div>
+                    </div>
+                    <div class="projects__sliderDots">
+                        <!-- Slider dots from project.js -->
+                    </div>
+                    <div class="projects__buttonCont" data-aos="zoom-in">
+                        <button class="button button--green">
+                            All projects
+                        </button>
                     </div>
                 </div>
-            </div>
-        </footer>
-
+            </section>
+    
+            <section class="testi">
+                <div class="testi__cont">
+                    <h2 class="testi__header" data-aos="zoom-in">
+                        What our clients are saying
+                    </h2>
+                    <div class="testi__sliderCont" data-aos="zoom-in-up">
+                        <!-- here comes code from testi.js -->
+                    </div>
+                </div>
+            </section>
+    
+            <section class="logos">
+                <div class="logos__cont" data-aos="fade-up">
+                    <img src="./img/logo_1.png" alt="" class="logos__img">
+                    <img src="./img/logo_2.png" alt="" class="logos__img">
+                    <img src="./img/logo_3.png" alt="" class="logos__img">
+                    <img src="./img/logo_4.png" alt="" class="logos__img">
+                    <img src="./img/logo_5.png" alt="" class="logos__img">
+                </div>
+            </section>
+    
+            <section class="contact">
+                <div class="contact__cont">
+                    <div class="contact__info" data-aos="zoom-in-right">
+                        <h2 class="contact__header">
+                            Don't hesitate to contact with us
+                        </h2>
+                        <span class="contact__bold">Phone: </span>
+                            <a href="tel: 1234 02234421" class="contact__phone">1234 02234421</a>
+                        <br />
+                        <span class="contact__bold">Email: </span>
+                            <a href="mailto: info@interpages.com" class="contact__email">info@interpages.com</a>
+                        <a href="/blog/" class="contact__blog">
+                            Visit out blog
+                        </a>
+                    </div>
+                    <div class="contact__formCont" data-aos="zoom-in-left">
+                        <form action="POST" class="contact__form">
+                            <input type="text" class="contact__input" placeholder="Enter your name" />
+                            <input type="email" class="contact__input" placeholder="Enter your email" />
+                            <textarea class="contact__textArea" placeholder="Enter your message"></textarea>
+                            <button type="submit" class="button contact__button button--violet">Send message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+    
+            <footer class="footer">
+                <div class="footer__cont">
+                    <div class="footer__logoCont">
+                        <img src="./img/logo.svg" alt="" class="footer__logoImg" />
+                        <div class="footer__copy">
+                            All rights are reserved ©<span id="footer__date"></span>
+                        </div>
+                    </div>
+                    <div class="footer__help">
+                        <h5 class="footer__header">
+                            Help Links
+                        </h5>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Cutomer support</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Privacy policy</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Terms</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__services">
+                        <h5 class="footer__header">
+                            Services
+                        </h5>
+                        <ul class="footer__list footer__list--withColumns">
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Node.js</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">React.js</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">IOS</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Node.js</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">React.js</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">IOS</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Node.js</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">React.js</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">IOS</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__socials">
+                        <h5 class="footer__header">
+                            Accounts
+                        </h5>
+                        <div class="footer__socialsCont">
+                            <a
+                                href="https://facebook.com/"
+                                class="footer__socialIconCont"
+                                target="_blank"
+                            >
+                                <img
+                                    src="./img/icons/social/facebook.svg"
+                                    alt=""
+                                    class="footer__socialIcon"
+                                />
+                            </a>
+                            <a
+                                href="https://twitter.com/"
+                                class="footer__socialIconCont"
+                                target="_blank"
+                            >
+                                <img
+                                    src="./img/icons/social/twitter.svg"
+                                    alt=""
+                                    class="footer__socialIcon"
+                                />
+                            </a>
+                            <a
+                                href="https://instagram.com/"
+                                class="footer__socialIconCont"
+                                target="_blank"
+                            >
+                                <img
+                                    src="./img/icons/social/instagram.svg"
+                                    alt=""
+                                    class="footer__socialIcon"
+                                />
+                            </a>
+                            <a
+                                href="https://youtube.com/"
+                                class="footer__socialIconCont"
+                                target="_blank"
+                            >
+                                <img
+                                    src="./img/icons/social/youtube.svg"
+                                    alt=""
+                                    class="footer__socialIcon"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        
+        </main>
+        
         <svg height="0" width="0">
             <defs>
                 <clipPath id="triangleImgShape">
@@ -360,6 +395,12 @@
             </defs>
         </svg>
 
+        <!-- Swup - between pages transition library -->
+        <!-- <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+        <script src="js/SwupFadeTheme.min.js"></script>
+        <script>
+            const swup = new Swup();
+        </script>  -->
         <!-- Hammer (swipe handler) library -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
         <script src="js/swipeHandler.js"></script>

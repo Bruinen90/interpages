@@ -44,6 +44,16 @@ border-radius: 0;
 }
 
 
+// Swup library
+.transition-fade {
+    transition: .5s;
+    opacity: 1;
+}
+  
+html.is-animating .transition-fade {
+opacity: 0;
+}
+
 @media (min-width: $desktop--min--width) {
     body {
         padding: 0;

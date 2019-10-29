@@ -25,11 +25,14 @@
 }
 
 .button--yellow:after {
-    background-color: $color-orange;
+    &:after {
+        background-color: $color-orange;
+    }
 }
 
 .button--violet {
     text-transform: uppercase;
+    background-color: $color-violet;
     &:after {
         background-color: $color-violet;
     }
@@ -37,6 +40,7 @@
 
 .button--green {
     text-transform: uppercase;
+    background-color: $color-green;
     &:after {
         background-color: $color-green;
         font-size: 18px;
@@ -72,11 +76,12 @@
 
 @media (min-width: $desktop--min--width) {
     .button {
-        transition: color 0s 0.15s ease-in, font-weight 0s 0.15s ease-in;
+        transition: color 0s 0.15s ease-in, font-weight 0s 0.15s ease-in, background-color 0s .25s linear;
         z-index: 1;
         &:hover {
             background-color: transparent;
             font-weight: bold;
+            transition: background-color 0s 0s linear;
             &:after {
                 transform: translateY(100%);
             }
